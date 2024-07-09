@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c83f347ff1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- Nav Bar bg-[#292f36] -->
+    <div
+      class="fixed sm:py-2 w-full z-10 transition ease-in-out duration-[0.4s]"
+      id="myNav"
+    >
+      <div
+        class="flex items-center justify-between container w-full sm:w-[1350px] m-auto px-10 sm:px-0"
+      >
+        <div class="ml-2">
+          <a href="#"
+            ><img class="max-w-48" src="./img/logo-company.png" alt="logo"
+          /></a>
+        </div>
+        <ul
+          class="hidden sm:flex flex-col sm:flex-row text-white font-medium nav-links padding-nav-links mr-3"
+        >
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="./pages/courses/index.html">Courses</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+        <!-- Hidden Hamburger Menu -->
+        <button class="sm:hidden" id="menu-btn">
+          <i class="text-white text-2xl fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <ul
+        class="hidden sm:hidden flex flex-col relative justify-center bg-white shadow-lg"
+        id="menu-ham"
+      >
+        <li>
+          <a class="block w-full px-5 py-3 hover:bg-slate-200" href="#">Home</a>
+        </li>
+        <li>
+          <a class="block w-full px-5 py-3 hover:bg-slate-200" href="#"
+            >Courses</a
+          >
+        </li>
+        <li>
+          <a class="block w-full px-5 py-3 hover:bg-slate-200" href="#"
+            >Blogs</a
+          >
+        </li>
+        <li>
+          <a class="block w-full px-5 py-3 hover:bg-slate-200" href="#"
+            >Login</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Hero Container -->
+    <section class="h-[80vh] hero cursor-default w-auto">
+      <div class="h-full container m-auto w-[400px] sm:w-[1350px]">
+        <div
+          class="flex flex-col justify-center items-center md:items-center lg:items-start gap-8 max-w-auto lg:max-w-[500px] h-full ml-3"
+        >
+          <h1
+            class="text-center lg:text-start text-white text-2xl lg:text-5xl md:text-3xl sm:text-3xl bruno-font"
+          >
+            EXPLORING THE
+            <span class="inline-block text-center lg:text-start my-2 bruno-font"
+              >FUTURE OF</span
+            >
+            TECHNOLOGY
+          </h1>
+          <p class="text-white bruno-font">Introspect | Innovate | Initiate</p>
+          <button
+            class="flex items-center font-medium text-yellow-500 border border-2 border-yellow-500 rounded-full py-2 px-5 hover:border-transparent hover:bg-white hover:text-blue-950 transition ease-in-out duration-[0.4s]"
+          >
+            Start Learning
+            <i class="ml-3 fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="relative my-10 top-5">
+      <hr
+        class="absolute bg-codroid_purple border-0 h-[3px] end-1/2 w-10 translate-x-1/2 top-[-1px]"
+      />
+      <hr class="max-w-28 mx-auto my-3" />
+    </div>
+
+    <!-- First Container -->
+    <section class="container m-auto w-[400px] sm:w-[1350px]">
+      <!-- Cards -->
+      <div class="flex flex-wrap justify-center gap-20 my-16">
+        <!-- Card-1 -->
+        <div
+          class="flex flex-col justify-center items-center sm:flex-row md:flex-row lg:flex-col w-full lg:w-auto rounded-xl shadow-lg px-10 py-10 gap-8 border-y-2 border-transparent hover:border-1 hover:border-red-400 transition ease-in-out duration-[0.3s] cursor-default"
+        >
+          <div
+            class="flex flex-col lg:flex-row gap-5 items-center lg:self-start"
+          >
+            <i
+              class="fa-solid fa-stairs bg-red-100 px-4 py-3 rounded-full text-red-400 text-2xl"
+            ></i>
+            <h2 class="text-center text-sm">
+              Fast Track Your skills with<br /><span
+                class="text-3xl text-red-500"
+                >Skill Sprints</span
+              >
+            </h2>
+          </div>
+          <ul class="flex flex-col gap-5 ml-5 ul-list">
+            <li>Intense, Immersive Learning</li>
+            <li>Ideal for Beginner</li>
+            <li>Rapid Skill Acquisition</li>
+          </ul>
+        </div>
+        <!-- Card-2 -->
+        <div
+          class="flex flex-col justify-center items-center sm:flex-row md:flex-row lg:flex-col w-full lg:w-auto rounded-xl shadow-lg items-center px-10 py-10 gap-8 border-y-2 border-transparent hover:border-1 hover:border-blue-400 transition ease-in-out duration-[0.3s] cursor-default"
+        >
+          <div
+            class="flex flex-col lg:flex-row gap-5 items-center lg:self-start"
+          >
+            <i
+              class="fa-solid fa-brain bg-blue-100 px-4 py-3 rounded-full text-blue-400 text-2xl"
+            ></i>
+            <h2 class="text-center text-sm">
+              Sharpen your expertise with<br /><span
+                class="text-3xl text-blue-500"
+                >Skill Boosters</span
+              >
+            </h2>
+          </div>
+          <ul class="flex flex-col gap-5 ml-5 ul-list">
+            <li>Enhance Existing Skills</li>
+            <li>Short-Term Courses</li>
+            <li>Upskill for Career Advancement</li>
+          </ul>
+        </div>
+        <!-- Card-3 -->
+        <div
+          class="flex flex-col justify-center items-center sm:flex-row md:flex-row lg:flex-col w-full lg:w-auto rounded-xl shadow-lg items-center px-10 py-10 gap-8 border-y-2 border-transparent hover:border-green-400 transition ease-in-out duration-[0.3s] cursor-default"
+        >
+          <div
+            class="flex flex-col lg:flex-row gap-5 items-center lg:self-start"
+          >
+            <i
+              class="fa-solid fa-check bg-green-100 px-4 py-3 rounded-full text-green-400 text-2xl"
+            ></i>
+            <h2 class="text-center text-sm">
+              Build an<br /><span class="text-3xl text-green-500"
+                >Extensive Skillset</span
+              >
+            </h2>
+          </div>
+          <ul class="flex flex-col gap-5 self-start ml-5 ul-list">
+            <li>Mastery Programs</li>
+            <li>In-Depth Learning</li>
+            <li>Career-Focused Learning</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Second Container -->
+    <section class="flex justify-center bg-slate-100 py-20 cursor-default">
+      <div
+        class="flex flex-col w-full lg:w-auto lg:flex-row py-16 bg-white container w-full sm:w-[800px] xl:w-[1320px] shadow-lg rounded-xl gap-5 px-10 md:px-16 m-5 sm:m-auto"
+      >
+        <div class="flex flex-col justify-center">
+          <img class="w-[1400px]" src="./img/stats-img.svg" alt="stats-img" />
+        </div>
+        <div class="flex flex-col justify-center gap-3">
+          <p class="text-codroid_purple font-bold">Our track record</p>
+          <h2 class="text-4xl font-medium">
+            Trusted by thousands of students worldwide.
+          </h2>
+          <p class="text-md text-slate-600 leading-8">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+            ipsa fugiat esse vitae architecto, numquam pariatur iusto, commodi
+            ipsam asperiores sed. Corrupti placeat consectetur nemo minus
+            incidunt, quos rerum recusandae!
+          </p>
+          <div class="flex flex-col sm:flex-row mt-5 gap-5 sm:gap-20">
+            <div class="flex flex-col gap-5">
+              <div class="border-l border-3 border-codroid_purple pl-5">
+                <h2 class="text-3xl font-medium">12</h2>
+                <p class="text-sm text-slate-600">Colleges have signed MOUs</p>
+              </div>
+              <div class="border-l border-3 border-codroid_purple pl-5">
+                <h2 class="text-3xl font-medium">30, 274</h2>
+                <p class="text-sm text-slate-600">Students enrolled</p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-5">
+              <div class="border-l border-3 border-codroid_purple pl-5">
+                <h2 class="text-3xl font-medium">2</h2>
+                <p class="text-sm text-slate-600">Countries in operation</p>
+              </div>
+              <div class="border-l border-3 border-codroid_purple pl-5">
+                <h2 class="text-3xl font-medium">26</h2>
+                <p class="text-sm text-slate-600">Fields excelling</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Third Container -->
+    <section
+      class="container w-[450px] sm:w-[800px] xl:w-[1320px] m-auto py-20 cursor-default"
+    >
+      <div>
+        <h2 class="text-center font-medium text-3xl">TEAM</h2>
+        <div class="relative top-2">
+          <hr
+            class="absolute bg-codroid_purple border-0 h-[3px] end-1/2 w-10 translate-x-1/2 top-[-1px]"
+          />
+          <hr class="max-w-28 mx-auto my-3" />
+        </div>
+        <p class="text-center mt-7 text-md text-slate-600 leading-8">
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit.
+        </p>
+      </div>
+
+      <!-- Cards -->
+      <div class="flex flex-col gap-8 items-center mt-10">
+        <!-- Card-row-1 -->
+        <div class="flex flex-wrap xl:flex-nowrap gap-8">
+          <!-- Card-1 -->
+          <div
+            class="flex flex-col sm:flex-row w-full xl:w-auto bg-white rounded-lg shadow-lg items-center py-10 px-14 gap-10 transition translate ease-in-out duration-[0.4s] hover:-translate-y-2"
+          >
+            <div class="max-w-[150px]">
+              <img class="rounded-full" src="./img/team-1.jpg" alt="" />
+            </div>
+            <div class="flex flex-col items-center sm:items-start gap-2">
+              <h2 class="text-lg font-medium text-codroid_purple">
+                Walter White
+              </h2>
+              <p class="text-sm">Chief Executive Officer</p>
+              <hr class="w-[50px]" />
+              <p class="text-center sm:text-start text-sm font-light leading-6">
+                Explicabo voluptatem mollitia et repellat qui dolorum quasi.
+              </p>
+              <div class="flex gap-2">
+                <a href="#"
+                  ><i
+                    class="bg-gray-100 text-gray-700 px-3 py-3 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-x-twitter"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="bg-gray-100 text-gray-700 px-3 py-3 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-facebook"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="bg-gray-100 text-gray-700 px-3 py-3 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-instagram"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="bg-gray-100 text-gray-700 px-3 py-3 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-linkedin"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card-2 -->
+          <div
+            class="flex flex-col sm:flex-row w-full xl:w-auto bg-white rounded-lg shadow-lg items-center py-10 px-14 gap-10 transition translate ease-in-out duration-[0.4s] hover:-translate-y-2"
+          >
+            <div class="max-w-[150px]">
+              <img class="rounded-full" src="./img/team-2.jpg" alt="" />
+            </div>
+            <div class="flex flex-col items-center sm:items-start gap-2">
+              <h2 class="text-lg font-medium text-codroid_purple">
+                Sarah Jhonson
+              </h2>
+              <p class="text-sm">Product Manager</p>
+              <hr class="w-[50px]" />
+              <p class="text-center sm:text-start text-sm font-light leading-6">
+                Aut maiores voluptates amet et quis praesentium qui senda para.
+              </p>
+              <div class="flex gap-2">
+                <a href="#"
+                  ><i
+                    class="bg-gray-100 text-gray-700 px-3 py-3 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-x-twitter"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="bg-gray-100 text-gray-700 px-3 py-3 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-facebook"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="bg-gray-100 text-gray-700 px-3 py-3 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-instagram"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="bg-gray-100 text-gray-700 px-3 py-3 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-linkedin"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap xl:flex-nowrap gap-8">
+          <!-- Card-3 -->
+          <div
+            class="flex flex-col sm:flex-row w-full xl:w-[695px] bg-white rounded-lg shadow-lg items-center py-10 px-14 gap-10 transition translate ease-in-out duration-[0.4s] hover:-translate-y-2"
+          >
+            <div class="max-w-[150px]">
+              <img class="rounded-full" src="./img/team-3.jpg" alt="" />
+            </div>
+            <div class="flex flex-col items-center sm:items-start gap-2">
+              <h2 class="text-lg font-medium text-codroid_purple">
+                William Anderson
+              </h2>
+              <p class="text-sm">CTO</p>
+              <hr class="w-[50px]" />
+              <p class="text-center sm:text-start text-sm font-light leading-6">
+                Quisquam facilis cum velit laborum corrupti fuga rerum quia.
+              </p>
+              <div class="flex gap-2">
+                <a href="#"
+                  ><i
+                    class="bg-gray-100 text-gray-700 px-3 py-3 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-x-twitter"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="bg-gray-100 text-gray-700 px-3 py-3 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-facebook"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="bg-gray-100 text-gray-700 px-3 py-3 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-instagram"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="bg-gray-100 text-gray-700 px-3 py-3 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-linkedin"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card-4 -->
+          <div
+            class="flex flex-col sm:flex-row w-full xl:w-auto bg-white rounded-lg shadow-lg items-center py-10 px-14 gap-10 transition translate ease-in-out duration-[0.4s] hover:-translate-y-2"
+          >
+            <div class="max-w-[150px]">
+              <img class="rounded-full" src="./img/team-4.jpg" alt="" />
+            </div>
+            <div class="flex flex-col items-center sm:items-start gap-2">
+              <h2 class="text-lg font-medium text-codroid_purple">
+                Amanda Jepson
+              </h2>
+              <p class="text-sm">Accountant</p>
+              <hr class="w-[50px]" />
+              <p class="text-center sm:text-start text-sm font-light leading-6">
+                Dolorum tempora officiis odit laborum officiis et et accusamus.
+              </p>
+              <div class="flex gap-2">
+                <a href="#"
+                  ><i
+                    class="bg-gray-100 text-gray-700 px-3 py-3 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-x-twitter"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="bg-gray-100 text-gray-700 px-3 py-3 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-facebook"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="bg-gray-100 text-gray-700 px-3 py-3 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-instagram"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="bg-gray-100 text-gray-700 px-3 py-3 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-linkedin"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fifth Container -->
+    <section class="bg-slate-100 py-12 cursor-default">
+      <div>
+        <h2 class="text-center font-medium text-3xl">Our Learning Programs</h2>
+        <div class="relative top-2">
+          <hr
+            class="absolute bg-codroid_purple border-0 h-[3px] end-1/2 w-10 translate-x-1/2 top-[-1px]"
+          />
+          <hr class="max-w-28 mx-auto my-3" />
+        </div>
+        <p class="text-center mt-7 text-md text-slate-600 leading-8 mb-5">
+          Boost your career in the latest and greatest technologies
+        </p>
+      </div>
+
+      <div class="container m-auto w-[450px] sm:w-[800px] xl:w-[1320px]">
+        <!-- Cards -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-5"
+        >
+          <!-- Cards-1 -->
+          <div
+            class="flex flex-col gap-4 px-5 py-8 bg-white w-auto shadow-xl rounded-lg overflow-hidden"
+          >
+            <p class="text-codroid_purple font-bold text-md">
+              Beginner Friendly
+            </p>
+            <div
+              class="w-auto h-auto sm:w-auto sm:h-[180px] lg:w-[350px] lg:h-[233px] xl:w-[373px] xl:h-[250px] 2xl:w-[390px] 2xl:h-[258px] overflow-hidden rounded-lg"
+            >
+              <img
+                class="object-cover h-[100%] w-[100%]"
+                src="./img/courses/java.jpg"
+                alt=""
+              />
+            </div>
+            <h2 class="font-bold text-xl">Programming Constructs using Java</h2>
+            <div class="flex flex-col gap-[3px] justify-center">
+              <div class="text-sm font-medium">
+                <i class="mr-[3px] text-codroid_purple fa-regular fa-clock"></i>
+                28 hours
+              </div>
+              <div class="text-sm font-medium">
+                <i class="mr-[3px] text-codroid_purple fa-regular fa-star"></i>
+                4.5 / 5.0
+              </div>
+              <div class="text-sm font-medium">
+                <i class="mr-[3px] text-codroid_purple fa-solid fa-code"></i>
+                Java
+              </div>
+            </div>
+            <button
+              class="bg-codroid_purple rounded-md py-2 mt-2 text-white text-sm border border-1 border-transparent hover:text-codroid_hover_purple hover:bg-white hover:border-codroid_hover_purple transition ease-in-out duration-[0.4s]"
+            >
+              Buy Lesson
+            </button>
+          </div>
+
+          <!-- Cards-2 -->
+          <div
+            class="flex flex-col gap-4 px-5 py-8 bg-white w-auto shadow-xl rounded-lg"
+          >
+            <p class="text-codroid_purple font-bold text-md">
+              Beginner Friendly
+            </p>
+            <div
+              class="w-auto h-auto sm:w-auto sm:h-[180px] lg:w-[350px] lg:h-[233px] xl:w-[373px] xl:h-[250px] 2xl:w-[390px] 2xl:h-[258px] overflow-hidden rounded-lg"
+            >
+              <img
+                class="object-cover h-[100%] w-[100%]"
+                src="./img/courses/game-development.jpeg"
+                alt=""
+              />
+            </div>
+            <h2 class="font-bold text-xl">Game Development</h2>
+            <div class="flex flex-col gap-[3px] justify-center">
+              <div class="text-sm font-medium">
+                <i class="mr-[3px] text-codroid_purple fa-regular fa-clock"></i>
+                28 hours
+              </div>
+              <div class="text-sm font-medium">
+                <i class="mr-[3px] text-codroid_purple fa-regular fa-star"></i>
+                4.5 / 5.0
+              </div>
+              <div class="text-sm font-medium">
+                <i class="mr-[3px] text-codroid_purple fa-solid fa-code"></i> C#
+              </div>
+            </div>
+            <button
+              class="bg-codroid_purple rounded-md py-2 mt-2 text-white text-sm border border-1 border-transparent hover:text-codroid_hover_purple hover:bg-white hover:border-codroid_hover_purple transition ease-in-out duration-[0.4s]"
+            >
+              Buy Lesson
+            </button>
+          </div>
+
+          <!-- Cards-3 -->
+          <div
+            class="flex flex-col gap-4 px-5 py-8 bg-white w-auto shadow-xl rounded-lg"
+          >
+            <p class="text-codroid_purple font-bold text-md">Intermediate</p>
+            <div
+              class="w-auto h-auto sm:w-auto sm:h-[180px] lg:w-[350px] lg:h-[233px] xl:w-[373px] xl:h-[250px] 2xl:w-[390px] 2xl:h-[258px] overflow-hidden rounded-lg"
+            >
+              <img
+                class="object-cover h-[100%] w-[100%]"
+                src="./img/courses/aws-1.jpg"
+                alt=""
+              />
+            </div>
+            <h2 class="font-bold text-xl">Introduction to AWS</h2>
+            <div class="flex flex-col gap-[3px] justify-center">
+              <div class="text-sm font-medium">
+                <i class="mr-[3px] text-codroid_purple fa-regular fa-clock"></i>
+                28 hours
+              </div>
+              <div class="text-sm font-medium">
+                <i class="mr-[3px] text-codroid_purple fa-regular fa-star"></i>
+                4.5 / 5.0
+              </div>
+              <div class="text-sm font-medium">
+                <i class="mr-[3px] text-codroid_purple fa-solid fa-code"></i>
+                Java, Python
+              </div>
+            </div>
+            <button
+              class="bg-codroid_purple rounded-md py-2 mt-2 text-white text-sm border border-1 border-transparent hover:text-codroid_hover_purple hover:bg-white hover:border-codroid_hover_purple transition ease-in-out duration-[0.4s]"
+            >
+              Buy Lesson
+            </button>
+          </div>
+        </div>
+        <button
+          class="block m-auto mt-12 py-2 px-5 rounded-full text-white bg-codroid_hover_purple border border-1 border-transparent font-medium hover:text-codroid_hover_purple hover:border-codroid_hover_purple hover:bg-white transition ease-in-out duration-[0.4s]"
+        >
+          Explore More<i class="ml-3 fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Sixth Container -->
+    <section class="bg-white py-12 cursor-default">
+      <div>
+        <h2 class="text-center font-medium text-3xl">Our Trusts</h2>
+        <div class="relative top-2">
+          <hr
+            class="absolute bg-codroid_purple border-0 h-[3px] end-1/2 w-10 translate-x-1/2 top-[-1px]"
+          />
+          <hr class="max-w-28 mx-auto my-3" />
+        </div>
+        <p class="text-center mt-7 text-md text-slate-600 leading-8 mb-5">
+          Trusted by 13+ leading colleges and companies
+        </p>
+      </div>
+      <div
+        class="container m-auto w-[400px] sm:w-[800px] xl:w-[1320px] py-10 cursor-default bg-white shadow-lg rounded-xl"
+      >
+        <div
+          class="flex flex-wrap gap-5 sm:gap-5 xl:gap-32 justify-center my-10"
+        >
+          <div class="flex items-center max-w-[150px]">
+            <img src="./img/partnerLogoImages/chandigarh-uni.png" alt="" />
+          </div>
+          <div class="flex items-center max-w-[150px]">
+            <img src="./img/partnerLogoImages/chitkara-uni.jpeg" alt="" />
+          </div>
+          <div class="flex items-center max-w-[130px]">
+            <img src="./img/partnerLogoImages/kurukshetra-uni.png" alt="" />
+          </div>
+          <div class="flex items-center max-w-[150px]">
+            <img src="./img/partnerLogoImages/rayat.png" alt="" />
+          </div>
+        </div>
+
+        <div
+          class="flex flex-wrap gap-5 sm:gap-5 xl:gap-32 justify-center my-10"
+        >
+          <div class="flex items-center max-w-[150px]">
+            <img src="./img/partnerLogoImages/dots-and-dashes.png" alt="" />
+          </div>
+          <div class="flex items-center max-w-[130px]">
+            <img src="./img/partnerLogoImages/facet.jpeg" alt="" />
+          </div>
+          <div class="flex items-center max-w-[150px]">
+            <img src="./img/partnerLogoImages/ncit-logo.jpg" alt="" />
+          </div>
+          <div class="flex items-center max-w-[140px]">
+            <img
+              src="./img/partnerLogoImages/partner-logo-image-1.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="flex flex-wrap gap-5 sm:gap-5 xl:gap-32 justify-center my-10"
+        >
+          <div class="flex items-center max-w-[150px]">
+            <img
+              src="./img/partnerLogoImages/partner-logo-image-2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="flex items-center max-w-[150px]">
+            <img
+              src="./img/partnerLogoImages/partner-logo-image-3.jpg"
+              alt=""
+            />
+          </div>
+          <div class="flex items-center max-w-[130px]">
+            <img
+              src="./img/partnerLogoImages/partner-logo-image-4.jpg"
+              alt=""
+            />
+          </div>
+          <div class="flex items-center max-w-[150px]">
+            <img
+              src="./img/partnerLogoImages/partner-logo-image-5.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="flex gap-5 sm:gap-5 xl:gap-32 justify-center my-10">
+          <div class="flex items-center max-w-[550px]">
+            <img src="./img/partnerLogoImages/sunway2.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-12 bg-slate-100 cursor-default">
+      <div>
+        <h2 class="text-center font-medium text-3xl">Testimonials</h2>
+        <div class="relative top-2">
+          <hr
+            class="absolute bg-codroid_purple border-0 h-[3px] end-1/2 w-10 translate-x-1/2 top-[-1px]"
+          />
+          <hr class="max-w-28 mx-auto my-3" />
+        </div>
+        <p class="text-center mt-7 text-md text-slate-600 leading-8 mb-5">
+          5653+ Codrodians have only good things to say
+        </p>
+      </div>
+
+      <div
+        class="container m-auto w-[500px] sm:w-[800px] xl:w-[1320px] p-10 bg-white shadow-lg rounded-xl testimonials"
+      >
+        <div class="grid grid-cols-1 xl:grid-cols-[290px_minmax(0px,_1fr)_290px] gap-5">
+          <div class="flex flex-row flex-col gap-5">
+            <div
+              class="flex flex-col bg-white rounded-2xl shadow-xl py-7 px-6 gap-5"
+            >
+              <p class="text-sm text-slate-600 leading-6">
+                “Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam
+                delectus nihil. Aut enim doloremque et ipsam.”
+              </p>
+              <div class="flex gap-3">
+                <img class="rounded-full w-11" src="./img/team-1.jpg" />
+                <div class="flex flex-col gap-1">
+                  <p class="text-sm text-black font-medium">Leslie Alexander</p>
+                  <p class="text-sm text-slate-600">@lesliealexander</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col bg-white rounded-2xl shadow-xl py-7 px-6 gap-5"
+            >
+              <p class="text-sm text-slate-600 leading-6">
+                “Quia dolorem qui et. Atque quo aliquid sit eos officia. Dolores
+                similique laboriosam quaerat cupiditate.”
+              </p>
+              <div class="flex gap-3">
+                <img class="rounded-full w-11" src="./img/team-1.jpg" />
+                <div class="flex flex-col gap-1">
+                  <p class="text-sm text-black font-medium">Leslie Alexander</p>
+                  <p class="text-sm text-slate-600">@lesliealexander</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col bg-white rounded-2xl shadow-xl py-7 px-6 gap-5"
+            >
+              <p class="text-sm text-slate-600 leading-6">
+                “Consequatur ut atque. Itaque nostrum molestiae id veniam eos
+                cumque. Ut quia eum fugit laborum autem inventore ut voluptate.”
+              </p>
+              <div class="flex gap-3">
+                <img class="rounded-full w-11" src="./img/team-1.jpg" />
+                <div class="flex flex-col gap-1">
+                  <p class="text-sm text-black font-medium">Leslie Alexander</p>
+                  <p class="text-sm text-slate-600">@lesliealexander</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Middle Gird -->
+          <div class="flex flex-col gap-5">
+            <div
+              class="flex flex-col justify-between bg-white rounded-2xl shadow-xl col-span-2 row-span-2"
+            >
+              <p class="text-lg p-10 font-medium leading-8">
+                “Integer id nunc sit semper purus. Bibendum at lacus ut arcu
+                blandit montes vitae auctor libero. Hac condimentum dignissim
+                nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel
+                et proin. Non hendrerit in vel ac diam.”
+              </p>
+              <div class="flex gap-3 border-t border-gray-200 p-5">
+                <img class="rounded-full w-11" src="./img/team-1.jpg" />
+                <div class="flex flex-col gap-1">
+                  <p class="text-sm text-black font-medium">Leslie Alexander</p>
+                  <p class="text-sm text-slate-600">@lesliealexander</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div class="flex flex-col gap-5">
+                <div
+                  class="flex flex-col bg-white rounded-2xl shadow-xl py-7 px-6 gap-5 h-auto"
+                >
+                  <p class="text-sm text-slate-600 leading-6">
+                    “Aut reprehenderit voluptatem eum asperiores beatae id. Iure
+                    molestiae ipsam ut officia rem nulla blanditiis.”
+                  </p>
+                  <div class="flex gap-3">
+                    <img class="rounded-full w-11" src="./img/team-1.jpg" />
+                    <div class="flex flex-col gap-1">
+                      <p class="text-sm text-black font-medium">
+                        Leslie Alexander
+                      </p>
+                      <p class="text-sm text-slate-600">@lesliealexander</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="flex flex-col bg-white rounded-2xl shadow-xl py-7 px-6 gap-5"
+                >
+                  <p class="text-sm text-slate-600 leading-6">
+                    “Nam nesciunt dolorem dolor asperiores cum. Incidunt
+                    molestiae quis deleniti vitae ut in earum delectus iusto.”
+                  </p>
+                  <div class="flex gap-3">
+                    <img class="rounded-full w-11" src="./img/team-1.jpg" />
+                    <div class="flex flex-col gap-1">
+                      <p class="text-sm text-black font-medium">
+                        Leslie Alexander
+                      </p>
+                      <p class="text-sm text-slate-600">@lesliealexander</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-5">
+                <div
+                  class="flex flex-col bg-white rounded-2xl shadow-xl py-7 px-6 gap-5 h-auto"
+                >
+                  <p class="text-sm text-slate-600 leading-6">
+                    “Voluptas quos itaque ipsam in voluptatem est. Iste eos
+                    blanditiis repudiandae. Earum deserunt enim molestiae ipsum
+                    perferendis recusandae saepe corrupti.”
+                  </p>
+                  <div class="flex gap-3">
+                    <img class="rounded-full w-11" src="./img/team-1.jpg" />
+                    <div class="flex flex-col gap-1">
+                      <p class="text-sm text-black font-medium">
+                        Leslie Alexander
+                      </p>
+                      <p class="text-sm text-slate-600">@lesliealexander</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="flex flex-col bg-white rounded-2xl shadow-xl py-7 px-6 gap-5"
+                >
+                  <p class="text-sm text-slate-600 leading-6">
+                    “Aliquid dolore praesentium ratione. Cumque ea officia
+                    repellendus laboriosam. Vitae quod id explicabo non sunt.”
+                  </p>
+                  <div class="flex gap-3">
+                    <img class="rounded-full w-11" src="./img/team-1.jpg" />
+                    <div class="flex flex-col gap-1">
+                      <p class="text-sm text-black font-medium">
+                        Leslie Alexander
+                      </p>
+                      <p class="text-sm text-slate-600">@lesliealexander</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-5">
+            <div
+              class="flex flex-col bg-white rounded-2xl shadow-xl py-7 px-6 gap-5"
+            >
+              <p class="text-sm text-slate-600 leading-6">
+                “Molestias ea earum quos nostrum doloremque sed. Quaerat quasi
+                aut velit incidunt excepturi rerum voluptatem minus harum.”
+              </p>
+              <div class="flex gap-3">
+                <img class="rounded-full w-11" src="./img/team-1.jpg" />
+                <div class="flex flex-col gap-1">
+                  <p class="text-sm text-black font-medium">Leslie Alexander</p>
+                  <p class="text-sm text-slate-600">@lesliealexander</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col bg-white rounded-2xl shadow-xl py-7 px-6 gap-5"
+            >
+              <p class="text-sm text-slate-600 leading-6">
+                “Architecto libero natus est. Est quam debitis officia enim
+                atque et ut non. Sunt reiciendis quasi eaque. Itaque error ut
+                et.
+              </p>
+              <div class="flex gap-3">
+                <img class="rounded-full w-11" src="./img/team-1.jpg" />
+                <div class="flex flex-col gap-1">
+                  <p class="text-sm text-black font-medium">Leslie Alexander</p>
+                  <p class="text-sm text-slate-600">@lesliealexander</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col bg-white rounded-2xl shadow-xl py-7 px-6 gap-5"
+            >
+              <p class="text-sm text-slate-600 leading-6">
+                “Temporibus ea molestiae impedit adipisci perspiciatis illo
+                aliquid. Quis ut ratione et voluptatem et. Nostrum explicabo
+                iste unde beatae.”
+              </p>
+              <div class="flex gap-3">
+                <img class="rounded-full w-11" src="./img/team-1.jpg" />
+                <div class="flex flex-col gap-1">
+                  <p class="text-sm text-black font-medium">Leslie Alexander</p>
+                  <p class="text-sm text-slate-600">@lesliealexander</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 cursor-default">
+      <div
+        class="flex flex-col-reverse xl:flex-row items-center justify-center xl:items-start xl:justify-between w-full lg:w-[1000px] xl:w-[1350px] m-auto py-10 sm:gap-10"
+      >
+        <div class="flex flex-col items-center xl:items-start gap-1 mt-5">
+          <div class="max-w-[200px]">
+            <img class="w-auto" src="./img/logo-company.png" />
+          </div>
+          <div
+            class="flex flex-col sm:items-center xl:items-start text-sm text-white gap-2 max-w-full xl:max-w-xs"
+          >
+            <p class="text-center xl:text-start">
+              Flat No. K-401 NTPC Shanti Vihar – Khajpura, Patna – Bihar, India
+              – 800014
+            </p>
+            <p class="text-center xl:text-start">
+              Operational: Ambala, Mohali, Kurukshetra, Noida
+            </p>
+            <p class="text-center xl:text-start">
+              Nepal: Kathmandu, Birendranagar
+            </p>
+          </div>
+          <div class="flex gap-3 mt-4">
+            <a href="#"
+              ><i
+                class="bg-gray-100 text-gray-700 px-2 py-2 rounded-full hover:text-white hover:bg-codroid_blue transition ease-in-out duration-[0.3s] fa-brands fa-x-twitter"
+              ></i
+            ></a>
+            <a href="#"
+              ><i
+                class="bg-gray-100 text-gray-700 px-2 py-2 rounded-full hover:text-white hover:bg-codroid_blue transition ease-in-out duration-[0.3s] fa-brands fa-facebook"
+              ></i
+            ></a>
+            <a href="#"
+              ><i
+                class="bg-gray-100 text-gray-700 px-2 py-2 rounded-full hover:text-white hover:bg-codroid_blue transition ease-in-out duration-[0.3s] fa-brands fa-instagram"
+              ></i
+            ></a>
+            <a href="#"
+              ><i
+                class="bg-gray-100 text-gray-700 px-[9px] py-2 rounded-full hover:text-white hover:bg-codroid_blue transition ease-in-out duration-[0.3s] fa-brands fa-linkedin"
+              ></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-10 lg:gap-20">
+          <div class="flex flex-col text-white gap-3">
+            <h2 class="text-md font-medium text-center lg:text-start">
+              Quick Links
+            </h2>
+            <ul
+              class="flex flex-col gap-2 footer-list nav-links text-sm text-center lg:text-start"
+            >
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Courses</a></li>
+              <li><a href="#">Register</a></li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col text-white gap-3">
+            <h2 class="text-md font-medium text-center lg:text-start">
+              Services
+            </h2>
+            <ul
+              class="flex flex-col gap-2 footer-list nav-links text-sm text-center lg:text-start"
+            >
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Cyber Security</a></li>
+              <li><a href="#">Blockchain</a></li>
+              <li><a href="#">AI and ML</a></li>
+              <li><a href="#">Product Design</a></li>
+              <li><a href="#">Quality Assurance</a></li>
+              <li><a href="#">Data Science</a></li>
+              <li><a href="#">Cloud Computing</a></li>
+              <li><a href="#">Cloud Computing</a></li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col text-white gap-3">
+            <h2 class="text-md font-medium text-center lg:text-start">
+              Account
+            </h2>
+            <ul
+              class="flex flex-col gap-2 footer-list nav-links text-sm text-center lg:text-start"
+            >
+              <li><a href="#">Manage Account</a></li>
+              <li><a href="#">Login to Student Portal</a></li>
+              <li><a href="#">Create an Account</a></li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col text-white gap-3">
+            <h2 class="text-md font-medium text-center lg:text-start">
+              Others
+            </h2>
+            <ul
+              class="flex flex-col gap-2 footer-list nav-links text-sm text-center lg:text-start"
+            >
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Events</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-8 border-t border-1 border-slate-600">
+        <p class="flex justify-center text-xs text-white">
+          Copyright © 2024 CodroidHub.
+        </p>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
