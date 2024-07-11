@@ -21,3 +21,16 @@ document.getElementById('menu-btn').addEventListener('click', () => {
     menuDisplay = true
   }
 })
+
+let firstSection = false
+
+document.getElementById('firstSection').addEventListener('click', () => {
+  console.log("Hello There!");
+  if(firstSection) {
+    document.getElementById('firstSectionDetails').classList.remove('hidden')
+    firstSection = true
+  } else {
+    document.getElementById('firstSectionDetails').classList.add('hidden')
+    firstSection = false
+  }
+})

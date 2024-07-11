@@ -49,6 +49,18 @@
     color: green;
   }
 
+  .details-list li::before{
+    font-family: 'Font Awesome 5 Free';
+    content: '\2714';
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    /* width: 15px;
+    height: 15px;
+    border-radius: 10px; */
+    margin-right: 10px;
+  }
+
   .scroll-nav-bg {
     background-color: #1e293bec;
   }
