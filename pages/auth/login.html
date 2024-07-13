@@ -39,9 +39,9 @@
           class="hidden sm:flex flex-col sm:flex-row text-white font-medium nav-links padding-nav-links mr-3"
         >
           <li><a href="/">Home</a></li>
-          <li><a class="active" href="../courses/index.html">Courses</a></li>
+          <li><a href="../courses/index.html">Courses</a></li>
           <li><a href="../blogs/index.html">Blogs</a></li>
-          <li><a href="#">Login</a></li>
+          <li><a class="active" href="../auth/login.html">Login</a></li>
         </ul>
         <!-- Hidden Hamburger Menu -->
         <button class="sm:hidden" id="menu-btn">
@@ -74,25 +74,53 @@
     </div>
 
     <!-- Course Section -->
-    <section class="mt-20 container m-auto cursor-default">
-      <div class="gap-10 m-auto w-[450px] sm:w-[800px] lg:[1000px] xl:w-[1250px] 2xl:w-[1320px] py-10">
-        <div class="flex flex-col gap-3">
-            <div class="max-w-[600px] place-self-center rounded-2xl overflow-hidden">
-                <img src="../../img/blogs/blog-2.avif">
-            </div>
-            <h2 class="text-4xl mt-10">How Pando Meetings Drive Continuous Calibration</h2>
-            <div class="flex flex-col">
-                <p class="font-medium">by Pando</p>
-                <p>April 17, 2024</p>
-            </div>
+    <section class="mt-32 container m-auto cursor-default">
+      <div>
+        <h2 class="text-center text-3xl font-medium">Student Login</h2>
+        <div class="relative my-5">
+          <hr
+            class="absolute bg-codroid_purple border-0 h-[3px] end-1/2 w-10 translate-x-1/2 top-[-1px]"
+          />
+          <hr class="max-w-28 mx-auto my-3" />
+        </div>
+      </div>
 
-            <!-- Blog Content -->
-            <div class="mt-8">
-              <p>Pando Meetings is our newest feature designed to enable continuous calibration. With built-in goals tracking, feedback and achievements, Pando Meetings keep managers and their reports aligned throughout the year–making the context for performance reviews much more relevant, recent and accurate.</p>
-
-              <h2 class="text-xl font-medium mt-5 mb-2">What is Continuous Performance Calibration?</h2>
-              <p>A term and philosophy we’ve established along with a set of tools to define, measure, document and communicate performance feedback loops which drive both employee growth and company impact. It’s not just feedback – but regular feedback loops in the context of concrete expectations and outcomes for each individual in the organization.</p>
+      <div
+        class="flex container justify-center my-10 container m-auto w-[450px] sm:w-[800px] lg:[1000px] xl:w-[1250px] 2xl:w-[1320px] py-10 px-10 login-bg rounded-xl"
+      >
+        <div class="bg-white rounded-lg p-10 w-[550px] shadow-xl">
+          <h2 class="text-lg font-medium text-center">Login</h2>
+          <form class="flex flex-col gap-7" action="#">
+            <div class="flex flex-col gap-2">
+              <label class="text-sm text-gray-400 font-medium" for="email"
+                >Email ID</label
+              >
+              <input
+                id="email"
+                class="border border-2 border-gray-300 py-3 px-4 rounded-lg focus:outline-codroid_purple"
+                type="text"
+                name="email"
+                required
+              />
             </div>
+            <div class="flex flex-col gap-2">
+              <label class="text-sm text-gray-400 font-medium" for="password"
+                >Password</label
+              >
+              <input
+                id="password"
+                class="border border-2 border-gray-300 py-3 px-4 rounded-lg focus:outline-codroid_purple"
+                type="password"
+                name="password"
+                required
+              />
+            </div>
+            <div class="flex justify-between items-center">
+                <input class="bg-codroid_purple py-2 rounded-full text-white font-medium w-32 cursor-pointer border border-1 border-transparent hover:bg-white hover:text-codroid_purple hover:border-codroid_purple transition ease-in-out duration-[0.4s]" type="submit" value="Login">
+                <a class="text-sm text-codroid_purple hover:text-codroid_hover_purple font-medium" href="#">Forgot Password?</a>
+            </div>
+            <p class="text-sm font-medium">Don't have an account? <a class="text-codroid_purple" href="#">Create New</a></p>
+          </form>
         </div>
       </div>
     </section>
@@ -100,7 +128,7 @@
     <!-- Footer -->
     <footer class="bg-slate-800 cursor-default">
       <div
-        class="flex flex-col-reverse xl:flex-row items-center justify-center xl:items-start xl:justify-between w-full lg:w-[1000px] xl:w-[1350px] m-auto py-10 sm:gap-10"
+        class="flex flex-col-reverse xl:flex-row items-center justify-center xl:items-start xl:justify-between w-full lg:w-[1000px] xl:w-[1280px] m-auto py-10 sm:gap-10"
       >
         <div class="flex flex-col items-center xl:items-start gap-1 mt-5">
           <div class="max-w-[200px]">

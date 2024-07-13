@@ -36,6 +36,11 @@
     background-size: cover;
   }
 
+  .login-bg {
+    background: url('./img/testimonials-2.png') no-repeat;
+    background-size: cover;
+  }
+
   .ul-list li::before {
     font-family: 'Font Awesome 5 Free';
     content: '\f058';

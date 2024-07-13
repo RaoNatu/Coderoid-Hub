@@ -23,7 +23,7 @@
     <title>Home</title>
   </head>
   <body>
-    <!-- Nav Bar bg-[#292f36] -->
+    <!-- Nav Bar -->
     <div
       class="fixed sm:py-2 w-full z-10 transition ease-in-out duration-[0.4s]"
       id="myNav"
@@ -33,7 +33,7 @@
       >
         <div class="ml-2">
           <a href="#"
-            ><img class="max-w-48" src="./img/logo-company.png" alt="logo"
+            ><img class="max-w-44" src="./img/logo-company.png" alt="logo"
           /></a>
         </div>
         <ul
@@ -42,8 +42,9 @@
           <li><a class="active" href="#">Home</a></li>
           <li><a href="./pages/courses/index.html">Courses</a></li>
           <li><a href="./pages/blogs/index.html">Blogs</a></li>
-          <li><a href="#">Login</a></li>
+          <li><a href="./pages/auth/login.html">Login</a></li>
         </ul>
+
         <!-- Hidden Hamburger Menu -->
         <button class="sm:hidden" id="menu-btn">
           <i class="text-white text-2xl fa-solid fa-bars"></i>
@@ -76,7 +77,9 @@
 
     <!-- Hero Container -->
     <section class="h-[80vh] hero cursor-default w-auto">
-      <div class="h-full container m-auto w-[400px] sm:w-[1350px]">
+      <div
+        class="h-full container m-auto w-[450px] sm:w-[800px] lg:[1000px] xl:w-[1250px] 2xl:w-[1350px]"
+      >
         <div
           class="flex flex-col justify-center items-center md:items-center lg:items-start gap-8 max-w-auto lg:max-w-[500px] h-full ml-3"
         >
@@ -90,12 +93,14 @@
             TECHNOLOGY
           </h1>
           <p class="text-white bruno-font">Introspect | Innovate | Initiate</p>
-          <button
-            class="flex items-center font-medium text-yellow-500 border border-2 border-yellow-500 rounded-full py-2 px-5 hover:border-transparent hover:bg-white hover:text-blue-950 transition ease-in-out duration-[0.4s]"
-          >
-            Start Learning
-            <i class="ml-3 fa-solid fa-arrow-right"></i>
-          </button>
+          <a href="./pages/auth/login.html">
+            <button
+              class="flex items-center font-medium text-yellow-500 border border-2 border-yellow-500 rounded-full py-2 px-5 hover:border-transparent hover:bg-white hover:text-blue-950 transition ease-in-out duration-[0.4s]"
+            >
+              Start Learning
+              <i class="ml-3 fa-solid fa-arrow-right"></i>
+            </button>
+          </a>
         </div>
       </div>
     </section>
@@ -108,7 +113,9 @@
     </div>
 
     <!-- First Container -->
-    <section class="container m-auto w-[400px] sm:w-[1350px]">
+    <section
+      class="container m-auto w-[450px] sm:w-[800px] lg:[1000px] xl:w-[1250px] 2xl:w-[1320px]"
+    >
       <!-- Cards -->
       <div class="flex flex-wrap justify-center gap-20 my-16">
         <!-- Card-1 -->
@@ -187,8 +194,10 @@
       <div
         class="flex flex-col w-full lg:w-auto lg:flex-row py-16 bg-white container w-full sm:w-[800px] xl:w-[1320px] shadow-lg rounded-xl gap-5 px-10 md:px-16 m-5 sm:m-auto"
       >
-        <div class="flex flex-col justify-center">
-          <img class="w-[1400px]" src="./img/stats-img.svg" alt="stats-img" />
+        <div
+          class="flex flex-col justify-center min-w-[300px] sm:min-w-[500px]"
+        >
+          <img class="w-full" src="./img/stats-img.svg" alt="stats-img" />
         </div>
         <div class="flex flex-col justify-center gap-3">
           <p class="text-codroid_purple font-bold">Our track record</p>
@@ -196,10 +205,12 @@
             Trusted by thousands of students worldwide.
           </h2>
           <p class="text-md text-slate-600 leading-8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            ipsa fugiat esse vitae architecto, numquam pariatur iusto, commodi
-            ipsam asperiores sed. Corrupti placeat consectetur nemo minus
-            incidunt, quos rerum recusandae!
+            Codroidhub Private Limited, is a leading e-learning company
+            specializing in providing world-class digital-age education to
+            academic institutions all across India. We know that you always
+            strive to provide the best to your students, which is why we are
+            delighted to offer our comprehensive e-learning solutions that come
+            with our latest digital technologies and pedagogical advantages.
           </p>
           <div class="flex flex-col sm:flex-row mt-5 gap-5 sm:gap-20">
             <div class="flex flex-col gap-5">
@@ -229,7 +240,7 @@
 
     <!-- Third Container -->
     <section
-      class="container w-[450px] sm:w-[800px] xl:w-[1320px] m-auto py-20 cursor-default"
+      class="container w-[450px] sm:w-[800px] lg:[1000px] xl:w-[1250px] 2xl:w-[1320px] m-auto py-20 cursor-default"
     >
       <div>
         <h2 class="text-center font-medium text-3xl">TEAM</h2>
@@ -240,8 +251,7 @@
           <hr class="max-w-28 mx-auto my-3" />
         </div>
         <p class="text-center mt-7 text-md text-slate-600 leading-8">
-          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-          consectetur velit.
+          The Backbone of Our Digital Presence
         </p>
       </div>
 
@@ -251,19 +261,22 @@
         <div class="flex flex-wrap xl:flex-nowrap gap-8">
           <!-- Card-1 -->
           <div
-            class="flex flex-col sm:flex-row w-full xl:w-auto bg-white rounded-lg shadow-lg items-center py-10 px-14 gap-10 transition translate ease-in-out duration-[0.4s] hover:-translate-y-2"
+            class="flex flex-col flex-1 sm:flex-row w-full xl:w-auto bg-white rounded-lg shadow-lg items-center py-10 px-14 gap-10 transition translate ease-in-out duration-[0.4s] hover:-translate-y-2"
           >
-            <div class="max-w-[150px]">
-              <img class="rounded-full" src="./img/team-1.jpg" alt="" />
+            <div
+              class="rounded-full max-w-[150px] min-w-[150px] overflow-hidden"
+            >
+              <img src="./img/teamImages/team-1.webp" alt="" />
             </div>
             <div class="flex flex-col items-center sm:items-start gap-2">
               <h2 class="text-lg font-medium text-codroid_purple">
-                Walter White
+                Devashish Kumar
               </h2>
-              <p class="text-sm">Chief Executive Officer</p>
+              <p class="text-sm">Founder & Director</p>
               <hr class="w-[50px]" />
               <p class="text-center sm:text-start text-sm font-light leading-6">
-                Explicabo voluptatem mollitia et repellat qui dolorum quasi.
+                Intel Edge AI Certified || AWS Certified Solutions Architect
+                Associate || Ex-WhiteHat Jr
               </p>
               <div class="flex gap-2">
                 <a href="#"
@@ -291,19 +304,26 @@
           </div>
           <!-- Card-2 -->
           <div
-            class="flex flex-col sm:flex-row w-full xl:w-auto bg-white rounded-lg shadow-lg items-center py-10 px-14 gap-10 transition translate ease-in-out duration-[0.4s] hover:-translate-y-2"
+            class="flex flex-col flex-1 sm:flex-row w-full xl:w-auto bg-white rounded-lg shadow-lg items-center py-10 px-14 gap-10 transition translate ease-in-out duration-[0.4s] hover:-translate-y-2"
           >
-            <div class="max-w-[150px]">
-              <img class="rounded-full" src="./img/team-2.jpg" alt="" />
+            <div
+              class="rounded-full max-w-[150px] min-w-[150px] overflow-hidden"
+            >
+              <img
+                class="rounded-full w-full h-full"
+                src="./img/teamImages/team-4.jpg"
+                alt=""
+              />
             </div>
             <div class="flex flex-col items-center sm:items-start gap-2">
               <h2 class="text-lg font-medium text-codroid_purple">
-                Sarah Jhonson
+                Bhawna Saini
               </h2>
-              <p class="text-sm">Product Manager</p>
+              <p class="text-sm">Manager</p>
               <hr class="w-[50px]" />
               <p class="text-center sm:text-start text-sm font-light leading-6">
-                Aut maiores voluptates amet et quis praesentium qui senda para.
+                AWS Certified Solutions Architect - Associate || Educator ||
+                Visiting Faculty at Bedfordshire University, USA in Nepal
               </p>
               <div class="flex gap-2">
                 <a href="#"
@@ -333,19 +353,26 @@
         <div class="flex flex-wrap xl:flex-nowrap gap-8">
           <!-- Card-3 -->
           <div
-            class="flex flex-col sm:flex-row w-full xl:w-[695px] bg-white rounded-lg shadow-lg items-center py-10 px-14 gap-10 transition translate ease-in-out duration-[0.4s] hover:-translate-y-2"
+            class="flex flex-col flex-1 sm:flex-row w-full xl:w-[695px] bg-white rounded-lg shadow-lg items-center py-10 px-14 gap-10 transition translate ease-in-out duration-[0.4s] hover:-translate-y-2"
           >
-            <div class="max-w-[150px]">
-              <img class="rounded-full" src="./img/team-3.jpg" alt="" />
+            <div
+              class="rounded-full max-w-[150px] min-w-[150px] overflow-hidden"
+            >
+              <img
+                class="rounded-full w-full h-full"
+                src="./img/teamImages/team-3.webp"
+                alt=""
+              />
             </div>
             <div class="flex flex-col items-center sm:items-start gap-2">
               <h2 class="text-lg font-medium text-codroid_purple">
-                William Anderson
+                Shraddha Kumar
               </h2>
-              <p class="text-sm">CTO</p>
+              <p class="text-sm">Instructor</p>
               <hr class="w-[50px]" />
               <p class="text-center sm:text-start text-sm font-light leading-6">
-                Quisquam facilis cum velit laborum corrupti fuga rerum quia.
+                Module Lead || Ex-Hewlett Packard Enterprise || Ex-Honeywell
+                Technology || Ex-Eye Care Leaders
               </p>
               <div class="flex gap-2">
                 <a href="#"
@@ -373,19 +400,72 @@
           </div>
           <!-- Card-4 -->
           <div
-            class="flex flex-col sm:flex-row w-full xl:w-auto bg-white rounded-lg shadow-lg items-center py-10 px-14 gap-10 transition translate ease-in-out duration-[0.4s] hover:-translate-y-2"
+            class="flex flex-col flex-1 sm:flex-row w-full xl:w-auto bg-white rounded-lg shadow-lg items-center py-10 px-14 gap-10 transition translate ease-in-out duration-[0.4s] hover:-translate-y-2"
           >
             <div class="max-w-[150px]">
-              <img class="rounded-full" src="./img/team-4.jpg" alt="" />
+              <img
+                class="rounded-full w-full h-full"
+                src="./img/teamImages/team-2.jpg"
+                alt=""
+              />
             </div>
             <div class="flex flex-col items-center sm:items-start gap-2">
               <h2 class="text-lg font-medium text-codroid_purple">
-                Amanda Jepson
+                Dr RN Thakur
               </h2>
-              <p class="text-sm">Accountant</p>
+              <p class="text-sm">Instuctor</p>
               <hr class="w-[50px]" />
               <p class="text-center sm:text-start text-sm font-light leading-6">
-                Dolorum tempora officiis odit laborum officiis et et accusamus.
+                Ex- Associate Professor at Westcliff University, USA in Nepal
+              </p>
+              <div class="flex gap-2">
+                <a href="#"
+                  ><i
+                    class="bg-gray-100 text-gray-700 px-3 py-3 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-x-twitter"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="bg-gray-100 text-gray-700 px-3 py-3 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-facebook"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="bg-gray-100 text-gray-700 px-3 py-3 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-instagram"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="bg-gray-100 text-gray-700 px-3 py-3 rounded-full hover:text-white hover:bg-codroid_purple transition ease-in-out duration-[0.3s] fa-brands fa-linkedin"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap xl:flex-nowrap gap-8">
+          <!-- Card-3 -->
+          <div
+            class="flex flex-col flex-1 sm:flex-row w-full xl:w-[695px] bg-white rounded-lg shadow-lg items-center py-10 px-14 gap-10 transition translate ease-in-out duration-[0.4s] hover:-translate-y-2"
+          >
+            <div
+              class="rounded-full max-w-[150px] min-w-[150px] overflow-hidden"
+            >
+              <img
+                class="rounded-full w-full h-full"
+                src="./img/teamImages/team-5.jpg"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col items-center sm:items-start gap-2">
+              <h2 class="text-lg font-medium text-codroid_purple">
+                Sonu Sharma
+              </h2>
+              <p class="text-sm">Instructor</p>
+              <hr class="w-[50px]" />
+              <p class="text-center sm:text-start text-sm font-light leading-6">
+                MCyber Security Consultant || Penetration Testing || Certified
+                Ethical Hacker (CEH)
               </p>
               <div class="flex gap-2">
                 <a href="#"
@@ -430,14 +510,16 @@
         </p>
       </div>
 
-      <div class="container m-auto w-[450px] sm:w-[800px] xl:w-[1320px]">
+      <div
+        class="container m-auto w-[450px] sm:w-[800px] lg:[1000px] xl:w-[1250px] 2xl:w-[1320px]"
+      >
         <!-- Cards -->
         <div
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-5"
         >
           <!-- Cards-1 -->
           <div
-            class="flex flex-col gap-4 px-5 py-8 bg-white w-auto shadow-xl rounded-lg overflow-hidden"
+            class="flex flex-col gap-4 px-5 py-8 bg-white w-auto shadow-xl rounded-lg overflow-hidden justify-between"
           >
             <p class="text-codroid_purple font-bold text-md">
               Beginner Friendly
@@ -455,7 +537,7 @@
             <div class="flex flex-col gap-[3px] justify-center">
               <div class="text-sm font-medium">
                 <i class="mr-[3px] text-codroid_purple fa-regular fa-clock"></i>
-                28 hours
+                40 hours
               </div>
               <div class="text-sm font-medium">
                 <i class="mr-[3px] text-codroid_purple fa-regular fa-star"></i>
@@ -466,16 +548,23 @@
                 Java
               </div>
             </div>
-            <button
-              class="bg-codroid_purple rounded-md py-2 mt-2 text-white text-sm border border-1 border-transparent hover:text-codroid_hover_purple hover:bg-white hover:border-codroid_hover_purple transition ease-in-out duration-[0.4s]"
-            >
-              Buy Lesson
-            </button>
+            <div class="flex">
+              <a
+                class="w-full"
+                href="./pages/courses/course-details/courseJava.html"
+              >
+                <button
+                  class="w-full bg-codroid_purple rounded-md py-2 mt-2 text-white text-sm border border-1 border-transparent hover:text-codroid_hover_purple hover:bg-white hover:border-codroid_hover_purple transition ease-in-out duration-[0.4s]"
+                >
+                  Learn More
+                </button>
+              </a>
+            </div>
           </div>
 
           <!-- Cards-2 -->
           <div
-            class="flex flex-col gap-4 px-5 py-8 bg-white w-auto shadow-xl rounded-lg"
+            class="flex flex-col gap-4 px-5 py-8 bg-white w-auto shadow-xl rounded-lg justify-between"
           >
             <p class="text-codroid_purple font-bold text-md">
               Beginner Friendly
@@ -493,7 +582,7 @@
             <div class="flex flex-col gap-[3px] justify-center">
               <div class="text-sm font-medium">
                 <i class="mr-[3px] text-codroid_purple fa-regular fa-clock"></i>
-                28 hours
+                40 hours
               </div>
               <div class="text-sm font-medium">
                 <i class="mr-[3px] text-codroid_purple fa-regular fa-star"></i>
@@ -503,16 +592,23 @@
                 <i class="mr-[3px] text-codroid_purple fa-solid fa-code"></i> C#
               </div>
             </div>
-            <button
-              class="bg-codroid_purple rounded-md py-2 mt-2 text-white text-sm border border-1 border-transparent hover:text-codroid_hover_purple hover:bg-white hover:border-codroid_hover_purple transition ease-in-out duration-[0.4s]"
-            >
-              Buy Lesson
-            </button>
+            <div class="flex">
+              <a
+                class="w-full"
+                href="./pages/courses/course-details/courseGameDev.html"
+              >
+                <button
+                  class="w-full bg-codroid_purple rounded-md py-2 mt-2 text-white text-sm border border-1 border-transparent hover:text-codroid_hover_purple hover:bg-white hover:border-codroid_hover_purple transition ease-in-out duration-[0.4s]"
+                >
+                  Learn More
+                </button>
+              </a>
+            </div>
           </div>
 
           <!-- Cards-3 -->
           <div
-            class="flex flex-col gap-4 px-5 py-8 bg-white w-auto shadow-xl rounded-lg"
+            class="flex flex-col gap-4 px-5 py-8 bg-white w-auto shadow-xl rounded-lg justify-between"
           >
             <p class="text-codroid_purple font-bold text-md">Intermediate</p>
             <div
@@ -528,7 +624,7 @@
             <div class="flex flex-col gap-[3px] justify-center">
               <div class="text-sm font-medium">
                 <i class="mr-[3px] text-codroid_purple fa-regular fa-clock"></i>
-                28 hours
+                40 hours
               </div>
               <div class="text-sm font-medium">
                 <i class="mr-[3px] text-codroid_purple fa-regular fa-star"></i>
@@ -539,19 +635,26 @@
                 Java, Python
               </div>
             </div>
-            <button
-              class="bg-codroid_purple rounded-md py-2 mt-2 text-white text-sm border border-1 border-transparent hover:text-codroid_hover_purple hover:bg-white hover:border-codroid_hover_purple transition ease-in-out duration-[0.4s]"
-            >
-              Buy Lesson
-            </button>
+            <div class="flex">
+              <a
+                class="w-full"
+                href="./pages/courses/course-details/courseAWS.html"
+              >
+                <button
+                  class="w-full bg-codroid_purple rounded-md py-2 mt-2 text-white text-sm border border-1 border-transparent hover:text-codroid_hover_purple hover:bg-white hover:border-codroid_hover_purple transition ease-in-out duration-[0.4s]"
+                >
+                  Learn More
+                </button>
+              </a>
+            </div>
           </div>
         </div>
         <a href="/pages/courses/index.html">
           <button
-          class="block m-auto mt-12 py-2 px-5 rounded-full text-white bg-codroid_hover_purple border border-1 border-transparent font-medium hover:text-codroid_hover_purple hover:border-codroid_hover_purple hover:bg-white transition ease-in-out duration-[0.4s]"
-        >
-          Explore More<i class="ml-3 fa-solid fa-arrow-right"></i>
-        </button>
+            class="block m-auto mt-12 py-2 px-5 rounded-full text-white bg-codroid_hover_purple border border-1 border-transparent font-medium hover:text-codroid_hover_purple hover:border-codroid_hover_purple hover:bg-white transition ease-in-out duration-[0.4s]"
+          >
+            Explore More<i class="ml-3 fa-solid fa-arrow-right"></i>
+          </button>
         </a>
       </div>
     </section>
@@ -571,7 +674,7 @@
         </p>
       </div>
       <div
-        class="container m-auto w-[400px] sm:w-[800px] xl:w-[1320px] py-10 cursor-default bg-white shadow-lg rounded-xl"
+        class="container m-auto w-[450px] sm:w-[800px] lg:[1000px] xl:w-[1250px] 2xl:w-[1320px] py-10 cursor-default bg-white shadow-lg rounded-xl"
       >
         <div
           class="flex flex-wrap gap-5 sm:gap-5 xl:gap-32 justify-center my-10"
@@ -661,22 +764,28 @@
       </div>
 
       <div
-        class="container m-auto w-[500px] sm:w-[800px] xl:w-[1320px] p-10 bg-white shadow-lg rounded-xl testimonials"
+        class="container m-auto w-[450px] sm:w-[800px] lg:[1000px] xl:w-[1250px] 2xl:w-[1320px] p-10 bg-white shadow-lg rounded-xl testimonials"
       >
-        <div class="grid grid-cols-1 xl:grid-cols-[290px_minmax(0px,_1fr)_290px] gap-5">
+        <div
+          class="grid grid-cols-1 xl:grid-cols-[290px_minmax(0px,_1fr)_290px] gap-5"
+        >
           <div class="flex flex-row flex-col gap-5">
             <div
               class="flex flex-col bg-white rounded-2xl shadow-xl py-7 px-6 gap-5 transition translate ease-in-out duration-[0.4s] hover:-translate-y-2"
             >
               <p class="text-sm text-slate-600 leading-6">
-                “Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam
-                delectus nihil. Aut enim doloremque et ipsam.”
+                My internship has given me a greater understanding of what it is
+                I have learned in the classroom, and given the opportunity to
+                apply it to real situations. One of the greatest benefits that I have received is the knowledge that I actually enjoy doing what it is I have been studying for. 
               </p>
               <div class="flex gap-3">
-                <img class="rounded-full w-11" src="./img/team-1.jpg" />
+                <img
+                  class="rounded-full w-11"
+                  src="./img/testimonialsImg/pic-1.jpg"
+                />
                 <div class="flex flex-col gap-1">
-                  <p class="text-sm text-black font-medium">Leslie Alexander</p>
-                  <p class="text-sm text-slate-600">@lesliealexander</p>
+                  <p class="text-sm text-black font-medium">Monika</p>
+                  <p class="text-sm text-slate-600">-</p>
                 </div>
               </div>
             </div>
@@ -685,14 +794,13 @@
               class="flex flex-col bg-white rounded-2xl shadow-xl py-7 px-6 gap-5 transition translate ease-in-out duration-[0.4s] hover:-translate-y-2"
             >
               <p class="text-sm text-slate-600 leading-6">
-                “Quia dolorem qui et. Atque quo aliquid sit eos officia. Dolores
-                similique laboriosam quaerat cupiditate.”
+                Programming Constructs is totally a different experience for me as here I got to learn too many new things that will help me to boost my skills. 
               </p>
               <div class="flex gap-3">
-                <img class="rounded-full w-11" src="./img/team-1.jpg" />
+                <img class="rounded-full w-11" src="./img/testimonialsImg/pic-2.jpg" />
                 <div class="flex flex-col gap-1">
-                  <p class="text-sm text-black font-medium">Leslie Alexander</p>
-                  <p class="text-sm text-slate-600">@lesliealexander</p>
+                  <p class="text-sm text-black font-medium">Jatin</p>
+                  <p class="text-sm text-slate-600">B.Tech, 2nd year</p>
                 </div>
               </div>
             </div>
@@ -701,14 +809,14 @@
               class="flex flex-col bg-white rounded-2xl shadow-xl py-7 px-6 gap-5 transition translate ease-in-out duration-[0.4s] hover:-translate-y-2"
             >
               <p class="text-sm text-slate-600 leading-6">
-                “Consequatur ut atque. Itaque nostrum molestiae id veniam eos
-                cumque. Ut quia eum fugit laborum autem inventore ut voluptate.”
+                I had very small experience with C before the course and the instructor was both patient enough to work with me yet still love the course flowing for the more advanced members.
+
               </p>
               <div class="flex gap-3">
-                <img class="rounded-full w-11" src="./img/team-1.jpg" />
+                <img class="rounded-full w-11" src="./img/testimonialsImg/pic-3.jpg" />
                 <div class="flex flex-col gap-1">
-                  <p class="text-sm text-black font-medium">Leslie Alexander</p>
-                  <p class="text-sm text-slate-600">@lesliealexander</p>
+                  <p class="text-sm text-black font-medium">Lovish Goyal</p>
+                  <p class="text-sm text-slate-600">B.Tech - CSE, 2nd year</p>
                 </div>
               </div>
             </div>
@@ -797,16 +905,15 @@
                   class="flex flex-col bg-white rounded-2xl shadow-xl py-7 px-6 gap-5 transition translate ease-in-out duration-[0.4s] hover:-translate-y-2"
                 >
                   <p class="text-sm text-slate-600 leading-6">
-                    “Aliquid dolore praesentium ratione. Cumque ea officia
-                    repellendus laboriosam. Vitae quod id explicabo non sunt.”
+                    Most important thing we completely trust on CodroidHub and on their courses. So keep it up and make our skills better and more better.
                   </p>
                   <div class="flex gap-3">
-                    <img class="rounded-full w-11" src="./img/team-1.jpg" />
+                    <img class="rounded-full w-11" src="./img/testimonialsImg/pic-7.jpg" />
                     <div class="flex flex-col gap-1">
                       <p class="text-sm text-black font-medium">
-                        Leslie Alexander
+                        Deepanshi
                       </p>
-                      <p class="text-sm text-slate-600">@lesliealexander</p>
+                      <p class="text-sm text-slate-600">B.Tech, 2nd year</p>
                     </div>
                   </div>
                 </div>
@@ -819,14 +926,13 @@
               class="flex flex-col bg-white rounded-2xl shadow-xl py-7 px-6 gap-5 transition translate ease-in-out duration-[0.4s] hover:-translate-y-2"
             >
               <p class="text-sm text-slate-600 leading-6">
-                “Molestias ea earum quos nostrum doloremque sed. Quaerat quasi
-                aut velit incidunt excepturi rerum voluptatem minus harum.”
+                I had never learnt any coding language before but with right guidance and patient tutors I've learnt Many new things about C and got hands on experience as well, which will definitely be helpful in the near future.
               </p>
               <div class="flex gap-3">
-                <img class="rounded-full w-11" src="./img/team-1.jpg" />
+                <img class="rounded-full w-11" src="./img/testimonialsImg/pic-4.jpg" />
                 <div class="flex flex-col gap-1">
-                  <p class="text-sm text-black font-medium">Leslie Alexander</p>
-                  <p class="text-sm text-slate-600">@lesliealexander</p>
+                  <p class="text-sm text-black font-medium">Soumya</p>
+                  <p class="text-sm text-slate-600">B.Tech, 2nd year</p>
                 </div>
               </div>
             </div>
@@ -835,15 +941,13 @@
               class="flex flex-col bg-white rounded-2xl shadow-xl py-7 px-6 gap-5 transition translate ease-in-out duration-[0.4s] hover:-translate-y-2"
             >
               <p class="text-sm text-slate-600 leading-6">
-                “Architecto libero natus est. Est quam debitis officia enim
-                atque et ut non. Sunt reiciendis quasi eaque. Itaque error ut
-                et.
+                Programming construcr was totally a different type of experience for me, I learnt many things that can help me to knowing more about coding. 
               </p>
               <div class="flex gap-3">
-                <img class="rounded-full w-11" src="./img/team-1.jpg" />
+                <img class="rounded-full w-11" src="./img/testimonialsImg/pic-5.jpg" />
                 <div class="flex flex-col gap-1">
-                  <p class="text-sm text-black font-medium">Leslie Alexander</p>
-                  <p class="text-sm text-slate-600">@lesliealexander</p>
+                  <p class="text-sm text-black font-medium">Muskan</p>
+                  <p class="text-sm text-slate-600">B.Tech, 2nd year</p>
                 </div>
               </div>
             </div>
@@ -852,15 +956,13 @@
               class="flex flex-col bg-white rounded-2xl shadow-xl py-7 px-6 gap-5 transition translate ease-in-out duration-[0.4s] hover:-translate-y-2"
             >
               <p class="text-sm text-slate-600 leading-6">
-                “Temporibus ea molestiae impedit adipisci perspiciatis illo
-                aliquid. Quis ut ratione et voluptatem et. Nostrum explicabo
-                iste unde beatae.”
+                I want to say that there should be more courses like this and i would also recommend this course to everyone. 
               </p>
               <div class="flex gap-3">
-                <img class="rounded-full w-11" src="./img/team-1.jpg" />
+                <img class="rounded-full w-11" src="./img/testimonialsImg/pic-6.jpg" />
                 <div class="flex flex-col gap-1">
-                  <p class="text-sm text-black font-medium">Leslie Alexander</p>
-                  <p class="text-sm text-slate-600">@lesliealexander</p>
+                  <p class="text-sm text-black font-medium">Shivani</p>
+                  <p class="text-sm text-slate-600">B.Tech, 2nd year</p>
                 </div>
               </div>
             </div>
@@ -874,7 +976,7 @@
       <div
         class="flex flex-col-reverse xl:flex-row items-center justify-center xl:items-start xl:justify-between w-full lg:w-[1000px] xl:w-[1350px] m-auto py-10 sm:gap-10"
       >
-        <div class="flex flex-col items-center xl:items-start gap-1 mt-5">
+        <div class="flex flex-col items-center xl:items-start gap-2 mt-5">
           <div class="max-w-[200px]">
             <img class="w-auto" src="./img/logo-company.png" />
           </div>
@@ -980,7 +1082,6 @@
         <p class="flex justify-center text-xs text-white">
           Copyright © 2024 CodroidHub.
         </p>
-        <span class="flex justify-center text-xs text-slate-800 mt-3 hover:text-white transition ease-in-out duration-[0.4s]">Designed By Natu</span>
       </div>
     </footer>
     <script src="index.js"></script>
