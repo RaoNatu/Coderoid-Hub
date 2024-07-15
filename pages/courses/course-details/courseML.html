@@ -24,9 +24,9 @@
     <title>Machine Learning & IoT</title>
   </head>
   <body>
-    <!-- Nav Bar bg-[#292f36] -->
+    <!-- Nav Bar -->
     <div
-      class="fixed top-0 sm:py-2 w-full z-10 transition ease-in-out duration-[0.4s] scroll-nav-bg"
+      class="fixed sm:py-2 w-full z-10 transition ease-in-out duration-[0.4s] scroll-nav-bg"
     >
       <div
         class="flex items-center justify-between container w-full sm:w-[1350px] m-auto px-10 sm:px-0"
@@ -34,7 +34,7 @@
         <div class="ml-2">
           <a href="/"
             ><img
-              class="max-w-48"
+              class="max-w-44"
               src="../../../img/logo-company.png"
               alt="logo"
           /></a>
@@ -43,10 +43,12 @@
           class="hidden sm:flex flex-col sm:flex-row text-white font-medium nav-links padding-nav-links mr-3"
         >
           <li><a href="/">Home</a></li>
-          <li><a class="active" href="../../courses/index.html">Courses</a></li>
+          <li><a class="active" href="../index.html">Courses</a></li>
           <li><a href="../../blogs/index.html">Blogs</a></li>
-          <li><a href="#">Login</a></li>
+          <li><a href="../../events/index.html">Events</a></li>
+          <li><a href="../../auth/login.html">Login</a></li>
         </ul>
+
         <!-- Hidden Hamburger Menu -->
         <button class="sm:hidden" id="menu-btn">
           <i class="text-white text-2xl fa-solid fa-bars"></i>
@@ -57,20 +59,33 @@
         id="menu-ham"
       >
         <li>
-          <a class="block w-full px-5 py-3 hover:bg-slate-200" href="#">Home</a>
+          <a class="block w-full px-5 py-3 hover:bg-slate-200" href="/">Home</a>
         </li>
         <li>
-          <a class="block w-full px-5 py-3 hover:bg-slate-200" href="#"
+          <a
+            class="block w-full px-5 py-3 hover:bg-slate-200"
+            href="../index.html"
             >Courses</a
           >
         </li>
         <li>
-          <a class="block w-full px-5 py-3 hover:bg-slate-200" href="#"
+          <a
+            class="block w-full px-5 py-3 hover:bg-slate-200"
+            href="../../blogs/index.html"
             >Blogs</a
           >
         </li>
         <li>
-          <a class="block w-full px-5 py-3 hover:bg-slate-200" href="#"
+          <a
+            class="block w-full px-5 py-3 hover:bg-slate-200"
+            href="../../events/index.html"
+            >Events</a
+          >
+        </li>
+        <li>
+          <a
+            class="block w-full px-5 py-3 hover:bg-slate-200"
+            href="../../auth/login.html"
             >Login</a
           >
         </li>
@@ -88,9 +103,9 @@
               <div
                 class="hidden md:flex md:text-sm font-medium mb-16 items-center gap-3"
               >
-                <a class="hover:underline" href="#">Home</a>
+                <a class="hover:underline" href="/">Home</a>
                 <i class="fa-solid fa-angle-right"></i>
-                <a class="hover:underline" href="#">Courses</a>
+                <a class="hover:underline" href="../index.html">Courses</a>
                 <i class="fa-solid fa-angle-right"></i>
                 <a class="hover:underline" href="#">Machine Learning & IoT</a>
               </div>
@@ -201,65 +216,81 @@
                 <h2 class="font-medium text-lg text-gray-800">
                   Course Content
                 </h2>
-                <div
-                  class="group flex justify-between border-b border-slate-200 py-3 cursor-pointer"
-                  id="firstDetailSection"
-                >
-                  <p class="text-gray-700">
-                    Basic of Machine<span
-                      class="hidden sm:inline-block ml-5 text-xs text-codroid_purple font-medium py-1 px-3 bg-codroid_purple_transparent_time rounded-sm"
-                      >1hr 40min</span
-                    >
-                  </p>
-                  <button
-                    class="text-gray-700 group-hover:text-codroid_purple"
-                    id="firstSectionBtn"
+
+                <div>
+                  <div
+                    class="group flex justify-between border-b border-slate-200 py-3 cursor-pointer section-main"
                   >
-                    <i class="fa-solid fa-plus"></i>
-                  </button>
+                    <p class="text-gray-700">
+                      Basic of Machine<span
+                        class="hidden sm:inline-block ml-5 text-xs text-codroid_purple font-medium py-1 px-3 bg-codroid_purple_transparent_time rounded-sm"
+                        >1hr 40min</span
+                      >
+                    </p>
+                    <button
+                      class="text-gray-700 group-hover:text-codroid_purple"
+                    >
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
+                  </div>
+                  <!-- Sub Section -->
                 </div>
 
-                <!-- Sub Section -->
-                <!-- Goes here -->
+                <div>
+                  <div
+                    class="group flex justify-between border-b border-slate-200 py-3 cursor-pointer section-main"
+                  >
+                    <p class="text-gray-700">
+                      Machine Learning in Depth<span
+                        class="hidden sm:inline-block ml-5 text-xs text-codroid_purple font-medium py-1 px-3 bg-codroid_purple_transparent_time rounded-sm"
+                        >1hr 40min</span
+                      >
+                    </p>
+                    <button
+                      class="text-gray-700 group-hover:text-codroid_purple"
+                    >
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
+                  </div>
+                  <!-- Sub Section -->
+                </div>
 
-                <div
-                  class="flex justify-between border-b border-slate-200 py-3 flex-wrap"
-                >
-                  <p class="text-gray-700">
-                    Machine Learning in Depth<span
-                      class="hidden sm:inline-block ml-5 text-xs text-codroid_purple font-medium py-1 px-3 bg-codroid_purple_transparent_time rounded-sm"
-                      >40min</span
+                <div>
+                  <div
+                    class="group flex justify-between border-b border-slate-200 py-3 cursor-pointer section-main"
+                  >
+                    <p class="text-gray-700">
+                      Introduction to IoT<span
+                        class="hidden sm:inline-block ml-5 text-xs text-codroid_purple font-medium py-1 px-3 bg-codroid_purple_transparent_time rounded-sm"
+                        >1hr 40min</span
+                      >
+                    </p>
+                    <button
+                      class="text-gray-700 group-hover:text-codroid_purple"
                     >
-                  </p>
-                  <button>
-                    <i class="text-gray-700 fa-solid fa-plus"></i>
-                  </button>
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
+                  </div>
+                  <!-- Sub Section -->
                 </div>
-                <div
-                  class="flex justify-between border-b border-slate-200 py-3"
-                >
-                  <p class="text-gray-700">
-                    Introduction to IoT<span
-                      class="hidden sm:inline-block ml-5 text-xs text-codroid_purple font-medium py-1 px-3 bg-codroid_purple_transparent_time rounded-sm"
-                      >2hrs</span
+
+                <div>
+                  <div
+                    class="group flex justify-between border-b border-slate-200 py-3 cursor-pointer section-main"
+                  >
+                    <p class="text-gray-700">
+                      Machine Learning Integration with AI<span
+                        class="hidden sm:inline-block ml-5 text-xs text-codroid_purple font-medium py-1 px-3 bg-codroid_purple_transparent_time rounded-sm"
+                        >1hr 40min</span
+                      >
+                    </p>
+                    <button
+                      class="text-gray-700 group-hover:text-codroid_purple"
                     >
-                  </p>
-                  <button>
-                    <i class="text-gray-700 fa-solid fa-plus"></i>
-                  </button>
-                </div>
-                <div
-                  class="flex justify-between border-b border-slate-200 py-3"
-                >
-                  <p class="text-gray-700">
-                    Machine Learning integration with AI<span
-                      class="hidden sm:inline-block ml-5 text-xs text-codroid_purple font-medium py-1 px-3 bg-codroid_purple_transparent_time rounded-sm"
-                      >1hr 15min</span
-                    >
-                  </p>
-                  <button>
-                    <i class="text-gray-700 fa-solid fa-plus"></i>
-                  </button>
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
+                  </div>
+                  <!-- Sub Section -->
                 </div>
               </div>
 
@@ -536,7 +567,7 @@
       <div
         class="flex flex-col-reverse xl:flex-row items-center justify-center xl:items-start xl:justify-between w-full lg:w-[1000px] xl:w-[1350px] m-auto py-10 sm:gap-10"
       >
-        <div class="flex flex-col items-center xl:items-start gap-1 mt-5">
+        <div class="flex flex-col items-center xl:items-start gap-2 mt-5">
           <div class="max-w-[200px]">
             <img class="w-auto" src="../../../img/logo-company.png" />
           </div>
@@ -555,22 +586,22 @@
             </p>
           </div>
           <div class="flex gap-3 mt-4">
-            <a href="#"
+            <a href="https://x.com/codroidhub" target="_blank"
               ><i
                 class="bg-gray-100 text-gray-700 px-2 py-2 rounded-full hover:text-white hover:bg-codroid_blue transition ease-in-out duration-[0.3s] fa-brands fa-x-twitter"
               ></i
             ></a>
-            <a href="#"
+            <a href="https://www.facebook.com/codroidhubpvtltd" target="_blank"
               ><i
                 class="bg-gray-100 text-gray-700 px-2 py-2 rounded-full hover:text-white hover:bg-codroid_blue transition ease-in-out duration-[0.3s] fa-brands fa-facebook"
               ></i
             ></a>
-            <a href="#"
+            <a href="https://www.instagram.com/codroidhub/" target="_blank"
               ><i
                 class="bg-gray-100 text-gray-700 px-2 py-2 rounded-full hover:text-white hover:bg-codroid_blue transition ease-in-out duration-[0.3s] fa-brands fa-instagram"
               ></i
             ></a>
-            <a href="#"
+            <a href="https://in.linkedin.com/company/codroidhub" target="_blank"
               ><i
                 class="bg-gray-100 text-gray-700 px-[9px] py-2 rounded-full hover:text-white hover:bg-codroid_blue transition ease-in-out duration-[0.3s] fa-brands fa-linkedin"
               ></i>
@@ -587,8 +618,7 @@
               class="flex flex-col gap-2 footer-list nav-links text-sm text-center lg:text-start"
             >
               <li><a href="/">Home</a></li>
-              <li><a href="../courses/index.html">Courses</a></li>
-              <li><a href="#">Register</a></li>
+              <li><a href="../../courses/index.html">Courses</a></li>
             </ul>
           </div>
 
@@ -607,6 +637,7 @@
               <li><a href="#">Quality Assurance</a></li>
               <li><a href="#">Data Science</a></li>
               <li><a href="#">Cloud Computing</a></li>
+              <li><a href="#">Cloud Computing</a></li>
             </ul>
           </div>
 
@@ -618,7 +649,9 @@
               class="flex flex-col gap-2 footer-list nav-links text-sm text-center lg:text-start"
             >
               <li><a href="#">Manage Account</a></li>
-              <li><a href="#">Login to Student Portal</a></li>
+              <li>
+                <a href="../../auth/login.html">Login to Student Portal</a>
+              </li>
               <li><a href="#">Create an Account</a></li>
             </ul>
           </div>
@@ -630,8 +663,8 @@
             <ul
               class="flex flex-col gap-2 footer-list nav-links text-sm text-center lg:text-start"
             >
-              <li><a href="../blogs/index.html">Blogs</a></li>
-              <li><a href="#">Events</a></li>
+              <li><a href="../../blogs/index.html">Blogs</a></li>
+              <li><a href="../../events/index.html">Events</a></li>
             </ul>
           </div>
         </div>
@@ -644,29 +677,6 @@
       </div>
     </footer>
 
-    <script>
-      let firstSection = false
-
-      document
-        .getElementById('firstDetailSection')
-        .addEventListener('click', () => {
-          console.log('Hello There!')
-          if (firstSection) {
-            document
-              .getElementById('firstSectionDetails')
-              .classList.add('hidden')
-            document.getElementById('firstSectionBtn').innerHTML =
-              '<i class="fa-solid fa-plus"></i>'
-            firstSection = false
-          } else {
-            document
-              .getElementById('firstSectionDetails')
-              .classList.remove('hidden')
-            document.getElementById('firstSectionBtn').innerHTML =
-              '<i class="text-codroid_purple fa-solid fa-minus"></i>'
-            firstSection = true
-          }
-        })
-    </script>
+    <script src="../course.js"></script>
   </body>
 </html>

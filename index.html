@@ -23,6 +23,7 @@
     <title>Home</title>
   </head>
   <body>
+    
     <!-- Nav Bar -->
     <div
       class="fixed sm:py-2 w-full z-10 transition ease-in-out duration-[0.4s]"
@@ -32,16 +33,17 @@
         class="flex items-center justify-between container w-full sm:w-[1350px] m-auto px-10 sm:px-0"
       >
         <div class="ml-2">
-          <a href="#"
+          <a href="/"
             ><img class="max-w-44" src="./img/logo-company.png" alt="logo"
           /></a>
         </div>
         <ul
           class="hidden sm:flex flex-col sm:flex-row text-white font-medium nav-links padding-nav-links mr-3"
         >
-          <li><a class="active" href="#">Home</a></li>
+          <li><a class="active" href="/">Home</a></li>
           <li><a href="./pages/courses/index.html">Courses</a></li>
           <li><a href="./pages/blogs/index.html">Blogs</a></li>
+          <li><a href="./pages/events/index.html">Events</a></li>
           <li><a href="./pages/auth/login.html">Login</a></li>
         </ul>
 
@@ -55,20 +57,33 @@
         id="menu-ham"
       >
         <li>
-          <a class="block w-full px-5 py-3 hover:bg-slate-200" href="#">Home</a>
+          <a class="block w-full px-5 py-3 hover:bg-slate-200" href="/">Home</a>
         </li>
         <li>
-          <a class="block w-full px-5 py-3 hover:bg-slate-200" href="#"
+          <a
+            class="block w-full px-5 py-3 hover:bg-slate-200"
+            href="./pages/courses/index.html"
             >Courses</a
           >
         </li>
         <li>
-          <a class="block w-full px-5 py-3 hover:bg-slate-200" href="#"
+          <a
+            class="block w-full px-5 py-3 hover:bg-slate-200"
+            href="./pages/blogs/index.html"
             >Blogs</a
           >
         </li>
         <li>
-          <a class="block w-full px-5 py-3 hover:bg-slate-200" href="#"
+          <a
+            class="block w-full px-5 py-3 hover:bg-slate-200"
+            href="./pages/events/index.html"
+            >Events</a
+          >
+        </li>
+        <li>
+          <a
+            class="block w-full px-5 py-3 hover:bg-slate-200"
+            href="./pages/auth/login.html"
             >Login</a
           >
         </li>
@@ -649,7 +664,7 @@
             </div>
           </div>
         </div>
-        <a href="/pages/courses/index.html">
+        <a href="./pages/courses/index.html">
           <button
             class="block m-auto mt-12 py-2 px-5 rounded-full text-white bg-codroid_hover_purple border border-1 border-transparent font-medium hover:text-codroid_hover_purple hover:border-codroid_hover_purple hover:bg-white transition ease-in-out duration-[0.4s]"
           >
@@ -776,7 +791,9 @@
               <p class="text-sm text-slate-600 leading-6">
                 My internship has given me a greater understanding of what it is
                 I have learned in the classroom, and given the opportunity to
-                apply it to real situations. One of the greatest benefits that I have received is the knowledge that I actually enjoy doing what it is I have been studying for. 
+                apply it to real situations. One of the greatest benefits that I
+                have received is the knowledge that I actually enjoy doing what
+                it is I have been studying for.
               </p>
               <div class="flex gap-3">
                 <img
@@ -794,10 +811,15 @@
               class="flex flex-col bg-white rounded-2xl shadow-xl py-7 px-6 gap-5 transition translate ease-in-out duration-[0.4s] hover:-translate-y-2"
             >
               <p class="text-sm text-slate-600 leading-6">
-                Programming Constructs is totally a different experience for me as here I got to learn too many new things that will help me to boost my skills. 
+                Programming Constructs is totally a different experience for me
+                as here I got to learn too many new things that will help me to
+                boost my skills.
               </p>
               <div class="flex gap-3">
-                <img class="rounded-full w-11" src="./img/testimonialsImg/pic-2.jpg" />
+                <img
+                  class="rounded-full w-11"
+                  src="./img/testimonialsImg/pic-2.jpg"
+                />
                 <div class="flex flex-col gap-1">
                   <p class="text-sm text-black font-medium">Jatin</p>
                   <p class="text-sm text-slate-600">B.Tech, 2nd year</p>
@@ -809,11 +831,15 @@
               class="flex flex-col bg-white rounded-2xl shadow-xl py-7 px-6 gap-5 transition translate ease-in-out duration-[0.4s] hover:-translate-y-2"
             >
               <p class="text-sm text-slate-600 leading-6">
-                I had very small experience with C before the course and the instructor was both patient enough to work with me yet still love the course flowing for the more advanced members.
-
+                I had very small experience with C before the course and the
+                instructor was both patient enough to work with me yet still
+                love the course flowing for the more advanced members.
               </p>
               <div class="flex gap-3">
-                <img class="rounded-full w-11" src="./img/testimonialsImg/pic-3.jpg" />
+                <img
+                  class="rounded-full w-11"
+                  src="./img/testimonialsImg/pic-3.jpg"
+                />
                 <div class="flex flex-col gap-1">
                   <p class="text-sm text-black font-medium">Lovish Goyal</p>
                   <p class="text-sm text-slate-600">B.Tech - CSE, 2nd year</p>
@@ -886,9 +912,7 @@
                   class="flex flex-col bg-white rounded-2xl shadow-xl py-7 px-6 gap-5 transition translate ease-in-out duration-[0.4s] hover:-translate-y-2 h-auto"
                 >
                   <p class="text-sm text-slate-600 leading-6">
-                    “Voluptas quos itaque ipsam in voluptatem est. Iste eos
-                    blanditiis repudiandae. Earum deserunt enim molestiae ipsum
-                    perferendis recusandae saepe corrupti.”
+                    Teachers here are very experienced and polite. `
                   </p>
                   <div class="flex gap-3">
                     <img class="rounded-full w-11" src="./img/team-1.jpg" />
@@ -905,14 +929,17 @@
                   class="flex flex-col bg-white rounded-2xl shadow-xl py-7 px-6 gap-5 transition translate ease-in-out duration-[0.4s] hover:-translate-y-2"
                 >
                   <p class="text-sm text-slate-600 leading-6">
-                    Most important thing we completely trust on CodroidHub and on their courses. So keep it up and make our skills better and more better.
+                    Most important thing we completely trust on CodroidHub and
+                    on their courses. So keep it up and make our skills better
+                    and more better.
                   </p>
                   <div class="flex gap-3">
-                    <img class="rounded-full w-11" src="./img/testimonialsImg/pic-7.jpg" />
+                    <img
+                      class="rounded-full w-11"
+                      src="./img/testimonialsImg/pic-7.jpg"
+                    />
                     <div class="flex flex-col gap-1">
-                      <p class="text-sm text-black font-medium">
-                        Deepanshi
-                      </p>
+                      <p class="text-sm text-black font-medium">Deepanshi</p>
                       <p class="text-sm text-slate-600">B.Tech, 2nd year</p>
                     </div>
                   </div>
@@ -926,10 +953,16 @@
               class="flex flex-col bg-white rounded-2xl shadow-xl py-7 px-6 gap-5 transition translate ease-in-out duration-[0.4s] hover:-translate-y-2"
             >
               <p class="text-sm text-slate-600 leading-6">
-                I had never learnt any coding language before but with right guidance and patient tutors I've learnt Many new things about C and got hands on experience as well, which will definitely be helpful in the near future.
+                I had never learnt any coding language before but with right
+                guidance and patient tutors I've learnt Many new things about C
+                and got hands on experience as well, which will definitely be
+                helpful in the near future.
               </p>
               <div class="flex gap-3">
-                <img class="rounded-full w-11" src="./img/testimonialsImg/pic-4.jpg" />
+                <img
+                  class="rounded-full w-11"
+                  src="./img/testimonialsImg/pic-4.jpg"
+                />
                 <div class="flex flex-col gap-1">
                   <p class="text-sm text-black font-medium">Soumya</p>
                   <p class="text-sm text-slate-600">B.Tech, 2nd year</p>
@@ -941,10 +974,15 @@
               class="flex flex-col bg-white rounded-2xl shadow-xl py-7 px-6 gap-5 transition translate ease-in-out duration-[0.4s] hover:-translate-y-2"
             >
               <p class="text-sm text-slate-600 leading-6">
-                Programming construcr was totally a different type of experience for me, I learnt many things that can help me to knowing more about coding. 
+                Programming construcr was totally a different type of experience
+                for me, I learnt many things that can help me to knowing more
+                about coding.
               </p>
               <div class="flex gap-3">
-                <img class="rounded-full w-11" src="./img/testimonialsImg/pic-5.jpg" />
+                <img
+                  class="rounded-full w-11"
+                  src="./img/testimonialsImg/pic-5.jpg"
+                />
                 <div class="flex flex-col gap-1">
                   <p class="text-sm text-black font-medium">Muskan</p>
                   <p class="text-sm text-slate-600">B.Tech, 2nd year</p>
@@ -956,10 +994,14 @@
               class="flex flex-col bg-white rounded-2xl shadow-xl py-7 px-6 gap-5 transition translate ease-in-out duration-[0.4s] hover:-translate-y-2"
             >
               <p class="text-sm text-slate-600 leading-6">
-                I want to say that there should be more courses like this and i would also recommend this course to everyone. 
+                I want to say that there should be more courses like this and i
+                would also recommend this course to everyone.
               </p>
               <div class="flex gap-3">
-                <img class="rounded-full w-11" src="./img/testimonialsImg/pic-6.jpg" />
+                <img
+                  class="rounded-full w-11"
+                  src="./img/testimonialsImg/pic-6.jpg"
+                />
                 <div class="flex flex-col gap-1">
                   <p class="text-sm text-black font-medium">Shivani</p>
                   <p class="text-sm text-slate-600">B.Tech, 2nd year</p>
@@ -995,22 +1037,22 @@
             </p>
           </div>
           <div class="flex gap-3 mt-4">
-            <a href="#"
+            <a href="https://x.com/codroidhub" target="_blank"
               ><i
                 class="bg-gray-100 text-gray-700 px-2 py-2 rounded-full hover:text-white hover:bg-codroid_blue transition ease-in-out duration-[0.3s] fa-brands fa-x-twitter"
               ></i
             ></a>
-            <a href="#"
+            <a href="https://www.facebook.com/codroidhubpvtltd" target="_blank"
               ><i
                 class="bg-gray-100 text-gray-700 px-2 py-2 rounded-full hover:text-white hover:bg-codroid_blue transition ease-in-out duration-[0.3s] fa-brands fa-facebook"
               ></i
             ></a>
-            <a href="#"
+            <a href="https://www.instagram.com/codroidhub/" target="_blank"
               ><i
                 class="bg-gray-100 text-gray-700 px-2 py-2 rounded-full hover:text-white hover:bg-codroid_blue transition ease-in-out duration-[0.3s] fa-brands fa-instagram"
               ></i
             ></a>
-            <a href="#"
+            <a href="https://in.linkedin.com/company/codroidhub" target="_blank"
               ><i
                 class="bg-gray-100 text-gray-700 px-[9px] py-2 rounded-full hover:text-white hover:bg-codroid_blue transition ease-in-out duration-[0.3s] fa-brands fa-linkedin"
               ></i>
@@ -1028,7 +1070,6 @@
             >
               <li><a href="/">Home</a></li>
               <li><a href="./pages/courses/index.html">Courses</a></li>
-              <li><a href="#">Register</a></li>
             </ul>
           </div>
 
@@ -1059,7 +1100,9 @@
               class="flex flex-col gap-2 footer-list nav-links text-sm text-center lg:text-start"
             >
               <li><a href="#">Manage Account</a></li>
-              <li><a href="#">Login to Student Portal</a></li>
+              <li>
+                <a href="./pages/auth/login.html">Login to Student Portal</a>
+              </li>
               <li><a href="#">Create an Account</a></li>
             </ul>
           </div>
@@ -1072,7 +1115,7 @@
               class="flex flex-col gap-2 footer-list nav-links text-sm text-center lg:text-start"
             >
               <li><a href="./pages/blogs/index.html">Blogs</a></li>
-              <li><a href="#">Events</a></li>
+              <li><a href="./pages/events/index.html">Events</a></li>
             </ul>
           </div>
         </div>

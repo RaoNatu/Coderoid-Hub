@@ -23,7 +23,7 @@
     <title>Courses</title>
   </head>
   <body>
-    <!-- Nav Bar-->
+    <!-- Nav Bar bg-[#292f36] -->
     <div
       class="fixed top-0 sm:py-2 w-full z-10 transition ease-in-out duration-[0.4s] scroll-nav-bg"
     >
@@ -39,11 +39,12 @@
           class="hidden sm:flex flex-col sm:flex-row text-white font-medium nav-links padding-nav-links mr-3"
         >
           <li><a href="/">Home</a></li>
-          <li><a href="../../courses/index.html">Courses</a></li>
-          <li><a class="active" href="../index.html">Blogs</a></li>
-          <li><a href="../../events/index.html">Events</a></li>
+          <li><a  href="../../courses/index.html">Courses</a></li>
+          <li><a href="../../blogs/index.html">Blogs</a></li>
+          <li><a class="active" href="../index.html">Events</a></li>
           <li><a href="../../auth/login.html">Login</a></li>
         </ul>
+
         <!-- Hidden Hamburger Menu -->
         <button class="sm:hidden" id="menu-btn">
           <i class="text-white text-2xl fa-solid fa-bars"></i>
@@ -67,7 +68,7 @@
           >
         </li>
         <li>
-          <a class="block w-full px-5 py-3 hover:bg-slate-200" href="../../events/index.html"
+          <a class="block w-full px-5 py-3 hover:bg-slate-200" href="../index.html"
             >Events</a
           >
         </li>
@@ -94,117 +95,38 @@
                 <a class="hover:underline" href="../index.html">Blogs</a>
                 <i class="fa-solid fa-angle-right"></i>
                 <a class="hover:underline" href="#"
-                  >Tailwind CSS: Building Beautiful and Responsive Web Designs</a
+                  >Techspire College and CodroidHub Pvt. Ltd. Join Forces to Revolutionize Tech Education</a
                 >
               </div>
               <div class="max-w-[600px] rounded-2xl overflow-hidden place-self-center">
-                  <img src="../../../../img/blogs/blog-1/blog-1-main.png">
+                  <img src="../../../../img/events/event-1/event-1-main.jpg">
               </div>
-              <h2 class="text-4xl mt-10">Tailwind CSS: Building Beautiful and Responsive Web Designs</h2>
+              <h2 class="text-4xl mt-10">Techspire College and CodroidHub Pvt. Ltd. Join Forces to Revolutionize Tech Education</h2>
               <div class="flex flex-col">
-                  <p class="font-medium">by Natu</p>
-                  <p>July 13, 2024</p>
+                  <p class="font-medium">by CodroidHub</p>
+                  <p>July 7, 2024</p>
               </div>
   
               <!-- Blog Content -->
               <div class=" flex flex-col mt-3">
-                <h2 class="text-2xl font-medium mt-5 mb-2">What is Tailwind CSS?</h2>
-                <p class="text-justify">Tailwind is a utility framework of CSS that enables us to style the components using the markup classes directly. Just like bootstrap, the primary distinction is that bootstrap is a component-based framework, while tailwind is more like a utility-based framework. <br><br>
+                <p class="text-justify">Techspire College is thrilled to announce a significant milestone in our journey towards educational excellence. We have officially signed a Memorandum of Understanding (MOU) with CodroidHub Pvt. Ltd., a prominent EdTech company renowned for its innovative approach to digital-age education in India. This partnership marks a pivotal step in our mission to enhance and expand our educational offerings, ensuring that our students are well-prepared for the rapidly evolving tech landscape. <br><br>
 
-                  Tailwind offers additional opportunities to style the components in a flexible manner. With Tailwind, you can also utilize features like media queries or pseudo elements like hover, active, etc. straight into your markup element classes without coding for any additional CSS in another file or such.
-                  </p>
-  
-                <h2 class="text-2xl font-medium mt-5 mb-2">What is the difference between component-based and utility-based frameworks? </h2>
-                <p class="text-justify">Component-based frameworks like Bootstrap, Foundation, and Materialize are meant to make it simpler to construct and maintain user interfaces by employing reusable components. Frameworks often provide a collection of preset modular components that may be stylized and changed to match the demands of a project. <br><br>
-                  While utility-based frameworks like Tailwind and Bootstrap (with utility classes) are more like classes, which offer power to style components at lower levels,. They are single-purpose classes that may be combined into style components. These frameworks concentrate on allowing developers comprehensive control over style without having to create individual CSS for every component. 
-                  </p>
-
-                <h2 class="text-2xl font-medium mt-5 mb-2">Why use Tailwind CSS? </h2>
-                <p class="text-justify">Think about writing lengthy styles like “margin-top: 1rem” and comparing it with "mt-1." Which one appears more intriguing and simpler to write? Tailwind enables us to write the styles inside the classes of a tag, so there’s no need to create another CSS file or style tags until you have to alter anything in a group.
+                    CodroidHub Pvt. Ltd. is celebrated for its cutting-edge technology solutions and its commitment to transforming the educational experience through digital tools. Their expertise in creating dynamic learning environments and fostering collaboration aligns seamlessly with Techspire College's vision. By combining our strengths, we aim to revolutionize how technology education is delivered and experienced, setting new benchmarks in the field. <br><br>
+                    
+                    This collaboration is more than just a strategic alliance; it represents a shared commitment to empowering students with the skills and knowledge necessary to excel in the digital age. Through this partnership, our students will gain access to an array of advanced educational resources and opportunities, designed to stimulate learning, growth, and innovation. This alignment with CodroidHub's forward-thinking approach will enable us to offer cutting-edge technology and methodologies that keep pace with industry advancements. <br><br>
+                    
+                    As we embark on this exciting new chapter, Techspire College and CodroidHub Pvt. Ltd. are focused on fostering a vibrant educational ecosystem that not only supports academic achievement but also encourages students to push boundaries and explore new horizons. The partnership promises to bring about transformative changes in our curriculum and pedagogical strategies, preparing our students to meet the demands of the future with confidence and creativity. <br><br>
+                    
+                    We look forward to the impactful outcomes of this collaboration and are enthusiastic about the new opportunities it will bring for our students. Stay tuned for more updates on how this partnership will unfold and the exciting initiatives that will be introduced as we work together to shape the future of tech education.
                 </p>
-
-                <h2 class="text-xl font-medium mt-5 mb-2">Example:</h2>
-                <p class="text-md font-medium text-gray-700">Without Tailwind</p>
-                <p class="mt-1"><pre>&lt;h1&gt;CodroidHub&lt;/h1&gt;</pre></p>
-                <p><pre>h1 { color: red; } </pre></p>
-                
-                <p class="text-md mt-2 font-medium text-gray-700">With Tailwind</p>
-                <p class="mt-1"><pre>&lt;h1 class="text-red-600"&gt;CodroidHub&lt;/h1&gt;</pre></p>
-                <p class="text-justify mt-5">Tailwind made creating code and adding media queries simple. While without tailwind, it makes the code more hefty since it also contains the classes and styles that we are not utilizing in the page.
-                  One of the major characteristics of Tailwind CSS is that it only adds those classes to the stylesheet that are utilized in the page and disregards the classes that are not.
-                  </p>
-
-                <h2 class="text-2xl font-medium mt-5 mb-2">How to utilize Tailwind CSS? </h2>
-                <p class="text-justify">Before digging into how to utilize and configure Tailwind CSS, it’s vital that you read its documentation. Every framework in the world has its own documentation, which developers or designers can study and act on appropriately. Let’s get started! <br><br>
-                  Many beginners, like myself when I first started to understand Tailwind CSS, become confused with the structure of it. But it’s not as complex as it looks. Tailwind can be added to your project in a variety of ways. But we are going to use the CDN method today. </p>
-
-                <h2 class="text-xl text-gray-700 font-medium mt-10 mb-2">Installing Tailwind using CDN  </h2>
-                <p class="text-justify">Most of the novices would utilize Tailwind CSS on a standard organized page where there’s an index.html file with style.css and script.js.</p>
-                <div class="w-[300px] mt-5 place-self-center">
-                  <img src="../../../img/blogs/blog-1/image-1.png">
-                </div>
-                
-                <p class="text-md font-medium text-gray-700 mt-8 mb-3">Adding tailwind CDN script </p>
-                <p class="text-justify">Let's add a script link to our index.html section below:
-                  <div class="relative bg-slate-800 py-5 px-5 rounded-2xl my-3">
-                    <pre class="text-gray-300">&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</pre>
-                    <button class="absolute text-xs text-slate-100 end-5 top-6">Copy</button>
-                  </div>
-                  If you open the supplied URL in the script, you’ll notice a minimum of JavaScript that is used to load the files. The essential feautres that tailwind requires</p>
-                  <div class="w-auto mt-5 place-self-center">
-                    <img src="../../../img/blogs/blog-1/image-2.png">
-                  </div>
-
-                <p class="text-md font-medium text-gray-700 mt-8 mb-3">Creating tailwind.config.js </p>
-                <p class="text-justify">In the next step we’ll paste the following script in the head section of the index.html
-                  <div class="relative bg-slate-800 py-5 px-5 rounded-2xl my-3">
-                    <pre class="text-gray-300">
-                      
-  &lt;script&gt;
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
-      }
-    }
-  &lt;script&gt;
-                  </pre>
-                    <button class="absolute text-xs text-slate-100 end-5 top-6">Copy</button>
-                  </div>
-                  Alternatively, we can create a new file named tailwind.config.js, copy the same code into it, and import it into our index.html. <br><br>
-
-The tailwind.config is used to customize our own color, and much more, and use them globally in our markups. You can read it in more detail in the Tailwind Documentation.</p>
-                
-                <p class="text-md font-medium text-gray-700 mt-8 mb-3">Managing custom styles </p>
-                <p class="text-justify">Tailwind does most of our work, but if there is something custom that we want to add, We can use the following code to add our own custom CSS classes and id styles:
-                  <div class="relative bg-slate-800 py-5 px-5 rounded-2xl my-3">
-                    <pre class="text-gray-300">
-                      
-  &lt;style type="text/tailwindcss"&gt;
-    @layer utilities {
-      .content-auto {
-        content-visibility: auto;
-      }
-    }
-  &lt;style&gt;
-                  </pre>
-                    <button class="absolute text-xs text-slate-100 end-5 top-6">Copy</button>
-                  </div>
-                  Alternatively, we can paste the same code with the style tags in an external CSS file and import that into our index.html.</p>
               </div>
-
-              <h2 class="text-2xl font-medium mt-5 mb-2">Conslusion </h2>
-                <p class="text-justify">Tailwind CSS represents a significant shift in the way developers approach styling in modern web development. Its utility-first approach encourages the creation of highly reusable, modular styles that can be easily customized and extended. By leveraging a predefined set of classes that directly map to CSS properties, Tailwind minimizes the need for custom CSS, streamlining the development process and enhancing consistency across a project. <br><br> This methodology not only accelerates the design workflow but also improves maintainability by reducing the amount of CSS code and fostering a more systematic approach to styling. As Tailwind continues to evolve and gain adoption, it stands as a powerful tool for creating visually appealing, responsive designs with greater efficiency and less overhead. </p>
           </div>
         </div>
         
         <!-- Right Side -->
         <div class="col-span-3 xl:col-span-2">
           <div>
-            <h2 class="text-3xl font-medium mb-5">Latest Blogs</h2>
+            <h2 class="text-3xl font-medium mb-5">Latest Events</h2>
           </div>
           
           <div class="grid grid-rows-2 grid-cols-1 sm:grid-cols-2 xl:grid-cols-1 gap-5">
@@ -215,24 +137,24 @@ The tailwind.config is used to customize our own color, and much more, and use t
               >
                 <img
                   class="w-full h-full object-cover"
-                  src="../../../../img/blogs/blog-1/blog-1-main.png"
+                  src="../../../../img/events/event-1/event-1-main.jpg"
                   alt=""
                 />
               </div>
               <div class="flex flex-col gap-3">
                 <div class="flex gap-5 items-center">
-                  <p class="text-xs text-gray-500">July 13, 2024</p>
+                  <p class="text-xs text-gray-500">July 7, 2024</p>
                   <p
                     class="text-xs font-medium text-gray-600 bg-gray-100 py-2 px-3 rounded-full hover:bg-gray-200 cursor-pointer"
                   >
-                  Web Designing
+                  EdTech
                   </p>
                 </div>
-                <a href="../blog-1/index.html">
+                <a href="../event-1/index.html">
                   <div class="flex group flex-col gap-1">
-                    <h2 class="text-lg font-medium group-hover:text-gray-700">Tailwind CSS: Building Beautiful and Responsive Web Designs</h2>
+                    <h2 class="text-lg font-medium group-hover:text-gray-700">Techspire College and CodroidHub Pvt. Ltd. Join Forces to Revolutionize Tech Education</h2>
                     <p class="text-sm text-gray-600 leading-6 line-clamp-2">
-                      Tailwind is a utility framework of CSS that enables us to style the components using the markup classes directly. Just like bootstrap, the primary distinction is that bootstrap is a component-based framework, while tailwind is more like a utility-based framework.
+                        Techspire College has signed a Memorandum of Understanding with CodroidHub Pvt. Ltd., a leading EdTech company in India specializing in digital-age education. This partnership aligns perfectly with our vision to equip students with the skills they need to thrive in the digital age.
                     </p>
                   </div>
                 </a>
