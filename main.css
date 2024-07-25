@@ -23,12 +23,18 @@
     color: #7c68eecc;
   }
   .bruno-font {
-    font-family: "Bruno Ace SC", sans-serif;
+    font-family: 'Bruno Ace SC', sans-serif;
   }
 
   .hero {
     background: url('./img/bg-img.jpg') no-repeat;
     background-size: cover;
+  }
+
+  .cards {
+    background: url('./img/cards-bg-img-1.jpg') no-repeat;
+    background-size: cover;
+    background-position: top;
   }
 
   .testimonials {
@@ -54,7 +60,7 @@
     color: green;
   }
 
-  .details-list li::before{
+  .details-list li::before {
     font-family: 'Font Awesome 5 Free';
     content: '\2714';
     display: inline-block;
@@ -83,5 +89,18 @@
 
   #menuHam a {
     transition: background-color ease-in-out 0.3s;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .slider-list {
+    animation: scroll 60s linear infinite
   }
 }

@@ -1,5 +1,3 @@
-console.log("Entered!")
-
 // For Menu scrool
 window.onscroll = function () {
   let navbar = document.getElementById('myNav')
@@ -26,22 +24,3 @@ document.getElementById('menu-btn').addEventListener('click', () => {
     menuDisplay = true
   }
 })
-
-
-
-// let firstSection = false
-
-// document.getElementById('firstDetailSection').addEventListener('click', () => {
-//   console.log('Hello There!')
-//   if (firstSection) {
-//     document.getElementById('firstSectionDetails').classList.add('hidden')
-//     document.getElementById('firstSectionBtn').innerHTML =
-//       '<i class="fa-solid fa-plus"></i>'
-//     firstSection = false
-//   } else {
-//     document.getElementById('firstSectionDetails').classList.remove('hidden')
-//     document.getElementById('firstSectionBtn').innerHTML =
-//       '<i class="text-codroid_purple fa-solid fa-minus"></i>'
-//     firstSection = true
-//   }
-// })

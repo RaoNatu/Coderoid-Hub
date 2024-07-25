@@ -82,7 +82,7 @@
     <!-- Course Section -->
     <section class="mt-32 container m-auto cursor-default">
       <div>
-        <h2 class="text-center text-3xl font-medium">Student Login</h2>
+        <h2 class="text-center text-3xl font-medium">Get in touch with us!</h2>
         <div class="relative my-5">
           <hr
             class="absolute bg-codroid_purple border-0 h-[3px] end-1/2 w-10 translate-x-1/2 top-[-10px]"
@@ -94,37 +94,70 @@
         class="flex container justify-center my-10 container m-auto w-[450px] sm:w-[800px] lg:[1000px] xl:w-[1250px] 2xl:w-[1320px] py-10 px-10 login-bg rounded-xl"
       >
         <div class="bg-white rounded-lg p-10 w-[550px] shadow-xl">
-          <h2 class="text-lg font-medium text-center">Login</h2>
-          <form class="flex flex-col gap-7" action="#">
+          <h2 class="text-lg font-medium text-center"></h2>
+          <form id="formId" class="flex flex-col gap-2" action="https://docs.google.com/forms/d/e/1FAIpQLSf5afa8rDYcFk5D-4TZkB6R_yUewmRkgWJYwcMF6elTM_T7yg/formResponse" method="post">
+            <div class="flex flex-col gap-2">
+              <label class="text-sm text-gray-400 font-medium" for="fname"
+                >First Name</label
+              >
+              <input
+                id="fname"
+                class="border border-2 border-gray-300 py-3 px-4 rounded-lg focus:outline-codroid_purple"
+                type="text"
+                name="entry.1187220075"
+                required
+              />
+            </div>
+            <div class="flex flex-col gap-2">
+              <label class="text-sm text-gray-400 font-medium" for="lname"
+                >Last Name</label
+              >
+              <input
+                id="lname"
+                class="border border-2 border-gray-300 py-3 px-4 rounded-lg focus:outline-codroid_purple"
+                type="text"
+                name="entry.885281092"
+              />
+              <div class="flex flex-col gap-2">
+                <label class="text-sm text-gray-400 font-medium" for="course">Select your course</label>
+                <select id="course" class="border border-2 border-gray-300 py-3 px-4 rounded-lg focus:outline-codroid_purple" name="entry.1666983684" required>
+                  <option>-- Select Course --</option>
+                  <option value="Programming Contruct in Java">Programming Construct in Java</option>
+                  <option value="Game Development">Game Development</option>
+                  <option value="Introduction to AWS">Introduction to AWS</option>
+                  <option value="Blockchain and Cyber Security">Blockchain and Cyber Security</option>
+                  <option value="Machine Learning">Machine Learning</option>
+                  <option value="Artificial Intelligence & IOT">Artificial Intelligence & IOT</option>
+                  <option value="Human Computer Interaction">Human Computer Interaction</option>
+                </select>
+              </div>
             <div class="flex flex-col gap-2">
               <label class="text-sm text-gray-400 font-medium" for="email"
-                >Email ID</label
+                >Email</label
               >
               <input
                 id="email"
                 class="border border-2 border-gray-300 py-3 px-4 rounded-lg focus:outline-codroid_purple"
-                type="text"
-                name="email"
+                type="email"
+                name="entry.296370792"
                 required
               />
             </div>
             <div class="flex flex-col gap-2">
-              <label class="text-sm text-gray-400 font-medium" for="password"
-                >Password</label
+              <label class="text-sm text-gray-400 font-medium" for="pnumber"
+                >Phone Number</label
               >
               <input
-                id="password"
+                id="pnumber"
                 class="border border-2 border-gray-300 py-3 px-4 rounded-lg focus:outline-codroid_purple"
-                type="password"
-                name="password"
+                type="number"
+                name="entry.1759508761"
                 required
               />
+            <div class="flex items-stretch mt-5">
+                <input class="bg-codroid_purple w-full py-2 rounded-full text-white font-medium w-32 cursor-pointer border border-1 border-transparent hover:bg-white hover:text-codroid_purple hover:border-codroid_purple transition ease-in-out duration-[0.4s]" type="submit" value="Proceed" id="proceedCourse">
             </div>
-            <div class="flex justify-between items-center">
-                <input class="bg-codroid_purple py-2 rounded-full text-white font-medium w-32 cursor-pointer border border-1 border-transparent hover:bg-white hover:text-codroid_purple hover:border-codroid_purple transition ease-in-out duration-[0.4s]" type="submit" value="Login">
-                <a class="text-sm text-codroid_purple hover:text-codroid_hover_purple font-medium" href="#">Forgot Password?</a>
-            </div>
-            <p class="text-sm font-medium">Don't have an account? <a class="text-codroid_purple" href="./register.html">Create New</a></p>
+            <p class="text-sm font-medium text-center">Already have an account? <a class="text-codroid_purple" href="./login.html">Login</a></p>
           </form>
         </div>
       </div>
@@ -218,7 +251,7 @@
             >
               <li><a href="#">Manage Account</a></li>
               <li><a href="../auth/login.html">Login to Student Portal</a></li>
-              <li><a href="../auth/register.html">Create an Account</a></li>
+              <li><a href="#">Create an Account</a></li>
             </ul>
           </div>
 
