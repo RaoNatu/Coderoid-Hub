@@ -1,7 +1,7 @@
 // For Menu scrool
 window.onscroll = function () {
   let navbar = document.getElementById('myNav')
-  if (window.scrollY > 150) {
+  if (window.scrollY > 50) {
     navbar.classList.add('scroll-nav-bg')
   } else {
     navbar.classList.remove('scroll-nav-bg')
